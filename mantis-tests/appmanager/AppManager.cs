@@ -19,6 +19,9 @@ namespace mantis_tests
         public FtpHelper Ftp { get; set; }
         public JamesHelper James { get; set; }
         public MailHelper Mail { get; set; }
+        public LoginHelper Auth { get; set; }
+        public ManagementMenuHelper Navigation { get; set; }
+        public ProjectManagementHelper Projects { get; set; }
 
 
 
@@ -32,6 +35,10 @@ namespace mantis_tests
             Ftp = new FtpHelper(this);
             James = new JamesHelper(this);
             Mail = new MailHelper(this);
+            Auth = new LoginHelper(this);
+            Projects = new ProjectManagementHelper(this);
+            Navigation = new ManagementMenuHelper(this);
+
 
         }
 
