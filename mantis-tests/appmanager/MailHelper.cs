@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using OpaqueMail.Net;
+using OpaqueMail;
 
 namespace mantis_tests
 {
@@ -20,14 +20,14 @@ namespace mantis_tests
                 pop3.Authenticate();
                 if (pop3.GetMessageCount() > 0)
                 {
-                    ReadOnlyMailMessage message = pop3.GetMessage(1);
+                    MailMessage message = pop3.GetMessage(1);
                     string body = message.Body;
                     pop3.DeleteMessage(1);
                     return body;
                 }
                 else
                 {
-                    System.Threading.Thread.Sleep(3000);
+                    System.Threading.Thread.Sleep(1000);
                 }
             }
             return null;
