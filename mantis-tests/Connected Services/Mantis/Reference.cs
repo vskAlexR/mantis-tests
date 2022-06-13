@@ -10,13 +10,13 @@
 
 namespace mantis_tests.Mantis
 {
-
-
+    
+    
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     [System.ServiceModel.ServiceContractAttribute(Namespace = "http://futureware.biz/mantisconnect", ConfigurationName = "Mantis.MantisConnectPortType")]
     public interface MantisConnectPortType
     {
-
+        
         [System.ServiceModel.OperationContractAttribute(Action = "http://homeserver:8080/mantisbt-2.25.4/api/soap/mantisconnect.php/mc_version", ReplyAction = "*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(Style = System.ServiceModel.OperationFormatStyle.Rpc, SupportFaults = true, Use = System.ServiceModel.OperationFormatUse.Encoded)]
         [return: System.ServiceModel.MessageParameterAttribute(Name = "return")]
@@ -25,7 +25,7 @@ namespace mantis_tests.Mantis
         [System.ServiceModel.OperationContractAttribute(Action = "http://homeserver:8080/mantisbt-2.25.4/api/soap/mantisconnect.php/mc_version", ReplyAction = "*")]
         [return: System.ServiceModel.MessageParameterAttribute(Name = "return")]
         System.Threading.Tasks.Task<string> mc_versionAsync();
-
+        
         [System.ServiceModel.OperationContractAttribute(Action = "http://homeserver:8080/mantisbt-2.25.4/api/soap/mantisconnect.php/mc_login", ReplyAction = "*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(Style = System.ServiceModel.OperationFormatStyle.Rpc, SupportFaults = true, Use = System.ServiceModel.OperationFormatUse.Encoded)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ProfileData))]
@@ -39,7 +39,7 @@ namespace mantis_tests.Mantis
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(AttachmentData))]
         [return: System.ServiceModel.MessageParameterAttribute(Name = "return")]
         mantis_tests.Mantis.UserData mc_login(string username, string password);
-
+        
         [System.ServiceModel.OperationContractAttribute(Action = "http://homeserver:8080/mantisbt-2.25.4/api/soap/mantisconnect.php/mc_login", ReplyAction = "*")]
         [return: System.ServiceModel.MessageParameterAttribute(Name = "return")]
         System.Threading.Tasks.Task<mantis_tests.Mantis.UserData> mc_loginAsync(string username, string password);
@@ -57,7 +57,7 @@ namespace mantis_tests.Mantis
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(AttachmentData))]
         [return: System.ServiceModel.MessageParameterAttribute(Name = "return")]
         mantis_tests.Mantis.ObjectRef[] mc_enum_status(string username, string password);
-
+        
         [System.ServiceModel.OperationContractAttribute(Action = "http://homeserver:8080/mantisbt-2.25.4/api/soap/mantisconnect.php/mc_enum_status", ReplyAction = "*")]
         [return: System.ServiceModel.MessageParameterAttribute(Name = "return")]
         System.Threading.Tasks.Task<mantis_tests.Mantis.ObjectRef[]> mc_enum_statusAsync(string username, string password);
@@ -76,7 +76,7 @@ namespace mantis_tests.Mantis
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(AttachmentData))]
         [return: System.ServiceModel.MessageParameterAttribute(Name = "return")]
         mantis_tests.Mantis.ObjectRef[] mc_enum_priorities(string username, string password);
-
+        
         [System.ServiceModel.OperationContractAttribute(Action = "http://homeserver:8080/mantisbt-2.25.4/api/soap/mantisconnect.php/mc_enum_priorit" +
             "ies", ReplyAction = "*")]
         [return: System.ServiceModel.MessageParameterAttribute(Name = "return")]
@@ -96,7 +96,7 @@ namespace mantis_tests.Mantis
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(AttachmentData))]
         [return: System.ServiceModel.MessageParameterAttribute(Name = "return")]
         mantis_tests.Mantis.ObjectRef[] mc_enum_severities(string username, string password);
-
+        
         [System.ServiceModel.OperationContractAttribute(Action = "http://homeserver:8080/mantisbt-2.25.4/api/soap/mantisconnect.php/mc_enum_severit" +
             "ies", ReplyAction = "*")]
         [return: System.ServiceModel.MessageParameterAttribute(Name = "return")]
@@ -116,7 +116,7 @@ namespace mantis_tests.Mantis
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(AttachmentData))]
         [return: System.ServiceModel.MessageParameterAttribute(Name = "return")]
         mantis_tests.Mantis.ObjectRef[] mc_enum_reproducibilities(string username, string password);
-
+        
         [System.ServiceModel.OperationContractAttribute(Action = "http://homeserver:8080/mantisbt-2.25.4/api/soap/mantisconnect.php/mc_enum_reprodu" +
             "cibilities", ReplyAction = "*")]
         [return: System.ServiceModel.MessageParameterAttribute(Name = "return")]
@@ -136,7 +136,7 @@ namespace mantis_tests.Mantis
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(AttachmentData))]
         [return: System.ServiceModel.MessageParameterAttribute(Name = "return")]
         mantis_tests.Mantis.ObjectRef[] mc_enum_projections(string username, string password);
-
+        
         [System.ServiceModel.OperationContractAttribute(Action = "http://homeserver:8080/mantisbt-2.25.4/api/soap/mantisconnect.php/mc_enum_project" +
             "ions", ReplyAction = "*")]
         [return: System.ServiceModel.MessageParameterAttribute(Name = "return")]
@@ -155,7 +155,7 @@ namespace mantis_tests.Mantis
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(AttachmentData))]
         [return: System.ServiceModel.MessageParameterAttribute(Name = "return")]
         mantis_tests.Mantis.ObjectRef[] mc_enum_etas(string username, string password);
-
+        
         [System.ServiceModel.OperationContractAttribute(Action = "http://homeserver:8080/mantisbt-2.25.4/api/soap/mantisconnect.php/mc_enum_etas", ReplyAction = "*")]
         [return: System.ServiceModel.MessageParameterAttribute(Name = "return")]
         System.Threading.Tasks.Task<mantis_tests.Mantis.ObjectRef[]> mc_enum_etasAsync(string username, string password);
@@ -174,7 +174,7 @@ namespace mantis_tests.Mantis
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(AttachmentData))]
         [return: System.ServiceModel.MessageParameterAttribute(Name = "return")]
         mantis_tests.Mantis.ObjectRef[] mc_enum_resolutions(string username, string password);
-
+        
         [System.ServiceModel.OperationContractAttribute(Action = "http://homeserver:8080/mantisbt-2.25.4/api/soap/mantisconnect.php/mc_enum_resolut" +
             "ions", ReplyAction = "*")]
         [return: System.ServiceModel.MessageParameterAttribute(Name = "return")]
@@ -194,7 +194,7 @@ namespace mantis_tests.Mantis
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(AttachmentData))]
         [return: System.ServiceModel.MessageParameterAttribute(Name = "return")]
         mantis_tests.Mantis.ObjectRef[] mc_enum_access_levels(string username, string password);
-
+        
         [System.ServiceModel.OperationContractAttribute(Action = "http://homeserver:8080/mantisbt-2.25.4/api/soap/mantisconnect.php/mc_enum_access_" +
             "levels", ReplyAction = "*")]
         [return: System.ServiceModel.MessageParameterAttribute(Name = "return")]
@@ -214,7 +214,7 @@ namespace mantis_tests.Mantis
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(AttachmentData))]
         [return: System.ServiceModel.MessageParameterAttribute(Name = "return")]
         mantis_tests.Mantis.ObjectRef[] mc_enum_project_status(string username, string password);
-
+        
         [System.ServiceModel.OperationContractAttribute(Action = "http://homeserver:8080/mantisbt-2.25.4/api/soap/mantisconnect.php/mc_enum_project" +
             "_status", ReplyAction = "*")]
         [return: System.ServiceModel.MessageParameterAttribute(Name = "return")]
@@ -234,7 +234,7 @@ namespace mantis_tests.Mantis
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(AttachmentData))]
         [return: System.ServiceModel.MessageParameterAttribute(Name = "return")]
         mantis_tests.Mantis.ObjectRef[] mc_enum_project_view_states(string username, string password);
-
+        
         [System.ServiceModel.OperationContractAttribute(Action = "http://homeserver:8080/mantisbt-2.25.4/api/soap/mantisconnect.php/mc_enum_project" +
             "_view_states", ReplyAction = "*")]
         [return: System.ServiceModel.MessageParameterAttribute(Name = "return")]
@@ -254,7 +254,7 @@ namespace mantis_tests.Mantis
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(AttachmentData))]
         [return: System.ServiceModel.MessageParameterAttribute(Name = "return")]
         mantis_tests.Mantis.ObjectRef[] mc_enum_view_states(string username, string password);
-
+        
         [System.ServiceModel.OperationContractAttribute(Action = "http://homeserver:8080/mantisbt-2.25.4/api/soap/mantisconnect.php/mc_enum_view_st" +
             "ates", ReplyAction = "*")]
         [return: System.ServiceModel.MessageParameterAttribute(Name = "return")]
@@ -274,7 +274,7 @@ namespace mantis_tests.Mantis
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(AttachmentData))]
         [return: System.ServiceModel.MessageParameterAttribute(Name = "return")]
         mantis_tests.Mantis.ObjectRef[] mc_enum_custom_field_types(string username, string password);
-
+        
         [System.ServiceModel.OperationContractAttribute(Action = "http://homeserver:8080/mantisbt-2.25.4/api/soap/mantisconnect.php/mc_enum_custom_" +
             "field_types", ReplyAction = "*")]
         [return: System.ServiceModel.MessageParameterAttribute(Name = "return")]
@@ -297,7 +297,7 @@ namespace mantis_tests.Mantis
         [System.ServiceModel.OperationContractAttribute(Action = "http://homeserver:8080/mantisbt-2.25.4/api/soap/mantisconnect.php/mc_enum_get", ReplyAction = "*")]
         [return: System.ServiceModel.MessageParameterAttribute(Name = "return")]
         System.Threading.Tasks.Task<string> mc_enum_getAsync(string username, string password, string enumeration);
-
+        
         [System.ServiceModel.OperationContractAttribute(Action = "http://homeserver:8080/mantisbt-2.25.4/api/soap/mantisconnect.php/mc_issue_exists" +
             "", ReplyAction = "*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(Style = System.ServiceModel.OperationFormatStyle.Rpc, SupportFaults = true, Use = System.ServiceModel.OperationFormatUse.Encoded)]
@@ -312,7 +312,7 @@ namespace mantis_tests.Mantis
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(AttachmentData))]
         [return: System.ServiceModel.MessageParameterAttribute(Name = "return")]
         bool mc_issue_exists(string username, string password, [System.Xml.Serialization.SoapElementAttribute(DataType = "integer")] string issue_id);
-
+        
         [System.ServiceModel.OperationContractAttribute(Action = "http://homeserver:8080/mantisbt-2.25.4/api/soap/mantisconnect.php/mc_issue_exists" +
             "", ReplyAction = "*")]
         [return: System.ServiceModel.MessageParameterAttribute(Name = "return")]
@@ -331,7 +331,7 @@ namespace mantis_tests.Mantis
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(AttachmentData))]
         [return: System.ServiceModel.MessageParameterAttribute(Name = "return")]
         mantis_tests.Mantis.IssueData mc_issue_get(string username, string password, [System.Xml.Serialization.SoapElementAttribute(DataType = "integer")] string issue_id);
-
+        
         [System.ServiceModel.OperationContractAttribute(Action = "http://homeserver:8080/mantisbt-2.25.4/api/soap/mantisconnect.php/mc_issue_get", ReplyAction = "*")]
         [return: System.ServiceModel.MessageParameterAttribute(Name = "return")]
         System.Threading.Tasks.Task<mantis_tests.Mantis.IssueData> mc_issue_getAsync(string username, string password, [System.Xml.Serialization.SoapElementAttribute(DataType = "integer")] string issue_id);
@@ -349,7 +349,7 @@ namespace mantis_tests.Mantis
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(AttachmentData))]
         [return: System.ServiceModel.MessageParameterAttribute(Name = "return")]
         mantis_tests.Mantis.IssueData[] mc_issues_get(string username, string password, string[] issue_ids);
-
+        
         [System.ServiceModel.OperationContractAttribute(Action = "http://homeserver:8080/mantisbt-2.25.4/api/soap/mantisconnect.php/mc_issues_get", ReplyAction = "*")]
         [return: System.ServiceModel.MessageParameterAttribute(Name = "return")]
         System.Threading.Tasks.Task<mantis_tests.Mantis.IssueData[]> mc_issues_getAsync(string username, string password, string[] issue_ids);
@@ -368,7 +368,7 @@ namespace mantis_tests.Mantis
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(AttachmentData))]
         [return: System.ServiceModel.MessageParameterAttribute(Name = "return")]
         mantis_tests.Mantis.IssueHeaderData[] mc_issues_get_header(string username, string password, string[] issue_ids);
-
+        
         [System.ServiceModel.OperationContractAttribute(Action = "http://homeserver:8080/mantisbt-2.25.4/api/soap/mantisconnect.php/mc_issues_get_h" +
             "eader", ReplyAction = "*")]
         [return: System.ServiceModel.MessageParameterAttribute(Name = "return")]
@@ -388,7 +388,7 @@ namespace mantis_tests.Mantis
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(AttachmentData))]
         [return: System.ServiceModel.MessageParameterAttribute(Name = "return")]
         mantis_tests.Mantis.HistoryData[] mc_issue_get_history(string username, string password, [System.Xml.Serialization.SoapElementAttribute(DataType = "integer")] string issue_id);
-
+        
         [System.ServiceModel.OperationContractAttribute(Action = "http://homeserver:8080/mantisbt-2.25.4/api/soap/mantisconnect.php/mc_issue_get_hi" +
             "story", ReplyAction = "*")]
         [return: System.ServiceModel.MessageParameterAttribute(Name = "return")]
@@ -409,7 +409,7 @@ namespace mantis_tests.Mantis
         [return: System.ServiceModel.MessageParameterAttribute(Name = "return")]
         [return: System.Xml.Serialization.SoapElementAttribute(DataType = "integer")]
         string mc_issue_get_biggest_id(string username, string password, [System.Xml.Serialization.SoapElementAttribute(DataType = "integer")] string project_id);
-
+        
         [System.ServiceModel.OperationContractAttribute(Action = "http://homeserver:8080/mantisbt-2.25.4/api/soap/mantisconnect.php/mc_issue_get_bi" +
             "ggest_id", ReplyAction = "*")]
         [return: System.ServiceModel.MessageParameterAttribute(Name = "return")]
@@ -437,7 +437,7 @@ namespace mantis_tests.Mantis
         [return: System.ServiceModel.MessageParameterAttribute(Name = "return")]
         [return: System.Xml.Serialization.SoapElementAttribute(DataType = "integer")]
         System.Threading.Tasks.Task<string> mc_issue_get_id_from_summaryAsync(string username, string password, string summary);
-
+        
         [System.ServiceModel.OperationContractAttribute(Action = "http://homeserver:8080/mantisbt-2.25.4/api/soap/mantisconnect.php/mc_issue_add", ReplyAction = "*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(Style = System.ServiceModel.OperationFormatStyle.Rpc, SupportFaults = true, Use = System.ServiceModel.OperationFormatUse.Encoded)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ProfileData))]
@@ -452,7 +452,7 @@ namespace mantis_tests.Mantis
         [return: System.ServiceModel.MessageParameterAttribute(Name = "return")]
         [return: System.Xml.Serialization.SoapElementAttribute(DataType = "integer")]
         string mc_issue_add(string username, string password, mantis_tests.Mantis.IssueData issue);
-
+        
         [System.ServiceModel.OperationContractAttribute(Action = "http://homeserver:8080/mantisbt-2.25.4/api/soap/mantisconnect.php/mc_issue_add", ReplyAction = "*")]
         [return: System.ServiceModel.MessageParameterAttribute(Name = "return")]
         [return: System.Xml.Serialization.SoapElementAttribute(DataType = "integer")]
@@ -472,7 +472,7 @@ namespace mantis_tests.Mantis
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(AttachmentData))]
         [return: System.ServiceModel.MessageParameterAttribute(Name = "return")]
         bool mc_issue_update(string username, string password, [System.Xml.Serialization.SoapElementAttribute(DataType = "integer")] string issueId, mantis_tests.Mantis.IssueData issue);
-
+        
         [System.ServiceModel.OperationContractAttribute(Action = "http://homeserver:8080/mantisbt-2.25.4/api/soap/mantisconnect.php/mc_issue_update" +
             "", ReplyAction = "*")]
         [return: System.ServiceModel.MessageParameterAttribute(Name = "return")]
@@ -492,7 +492,7 @@ namespace mantis_tests.Mantis
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(AttachmentData))]
         [return: System.ServiceModel.MessageParameterAttribute(Name = "return")]
         bool mc_issue_set_tags(string username, string password, [System.Xml.Serialization.SoapElementAttribute(DataType = "integer")] string issue_id, mantis_tests.Mantis.TagData[] tags);
-
+        
         [System.ServiceModel.OperationContractAttribute(Action = "http://homeserver:8080/mantisbt-2.25.4/api/soap/mantisconnect.php/mc_issue_set_ta" +
             "gs", ReplyAction = "*")]
         [return: System.ServiceModel.MessageParameterAttribute(Name = "return")]
@@ -512,7 +512,7 @@ namespace mantis_tests.Mantis
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(AttachmentData))]
         [return: System.ServiceModel.MessageParameterAttribute(Name = "return")]
         bool mc_issue_delete(string username, string password, [System.Xml.Serialization.SoapElementAttribute(DataType = "integer")] string issue_id);
-
+        
         [System.ServiceModel.OperationContractAttribute(Action = "http://homeserver:8080/mantisbt-2.25.4/api/soap/mantisconnect.php/mc_issue_delete" +
             "", ReplyAction = "*")]
         [return: System.ServiceModel.MessageParameterAttribute(Name = "return")]
@@ -533,7 +533,7 @@ namespace mantis_tests.Mantis
         [return: System.ServiceModel.MessageParameterAttribute(Name = "return")]
         [return: System.Xml.Serialization.SoapElementAttribute(DataType = "integer")]
         string mc_issue_note_add(string username, string password, [System.Xml.Serialization.SoapElementAttribute(DataType = "integer")] string issue_id, mantis_tests.Mantis.IssueNoteData note);
-
+        
         [System.ServiceModel.OperationContractAttribute(Action = "http://homeserver:8080/mantisbt-2.25.4/api/soap/mantisconnect.php/mc_issue_note_a" +
             "dd", ReplyAction = "*")]
         [return: System.ServiceModel.MessageParameterAttribute(Name = "return")]
@@ -554,7 +554,7 @@ namespace mantis_tests.Mantis
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(AttachmentData))]
         [return: System.ServiceModel.MessageParameterAttribute(Name = "return")]
         bool mc_issue_note_delete(string username, string password, [System.Xml.Serialization.SoapElementAttribute(DataType = "integer")] string issue_note_id);
-
+        
         [System.ServiceModel.OperationContractAttribute(Action = "http://homeserver:8080/mantisbt-2.25.4/api/soap/mantisconnect.php/mc_issue_note_d" +
             "elete", ReplyAction = "*")]
         [return: System.ServiceModel.MessageParameterAttribute(Name = "return")]
@@ -574,7 +574,7 @@ namespace mantis_tests.Mantis
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(AttachmentData))]
         [return: System.ServiceModel.MessageParameterAttribute(Name = "return")]
         bool mc_issue_note_update(string username, string password, mantis_tests.Mantis.IssueNoteData note);
-
+        
         [System.ServiceModel.OperationContractAttribute(Action = "http://homeserver:8080/mantisbt-2.25.4/api/soap/mantisconnect.php/mc_issue_note_u" +
             "pdate", ReplyAction = "*")]
         [return: System.ServiceModel.MessageParameterAttribute(Name = "return")]
@@ -595,7 +595,7 @@ namespace mantis_tests.Mantis
         [return: System.ServiceModel.MessageParameterAttribute(Name = "return")]
         [return: System.Xml.Serialization.SoapElementAttribute(DataType = "integer")]
         string mc_issue_relationship_add(string username, string password, [System.Xml.Serialization.SoapElementAttribute(DataType = "integer")] string issue_id, mantis_tests.Mantis.RelationshipData relationship);
-
+        
         [System.ServiceModel.OperationContractAttribute(Action = "http://homeserver:8080/mantisbt-2.25.4/api/soap/mantisconnect.php/mc_issue_relati" +
             "onship_add", ReplyAction = "*")]
         [return: System.ServiceModel.MessageParameterAttribute(Name = "return")]
@@ -616,7 +616,7 @@ namespace mantis_tests.Mantis
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(AttachmentData))]
         [return: System.ServiceModel.MessageParameterAttribute(Name = "return")]
         bool mc_issue_relationship_delete(string username, string password, [System.Xml.Serialization.SoapElementAttribute(DataType = "integer")] string issue_id, [System.Xml.Serialization.SoapElementAttribute(DataType = "integer")] string relationship_id);
-
+        
         [System.ServiceModel.OperationContractAttribute(Action = "http://homeserver:8080/mantisbt-2.25.4/api/soap/mantisconnect.php/mc_issue_relati" +
             "onship_delete", ReplyAction = "*")]
         [return: System.ServiceModel.MessageParameterAttribute(Name = "return")]
@@ -637,7 +637,7 @@ namespace mantis_tests.Mantis
         [return: System.ServiceModel.MessageParameterAttribute(Name = "return")]
         [return: System.Xml.Serialization.SoapElementAttribute(DataType = "integer")]
         string mc_issue_attachment_add(string username, string password, [System.Xml.Serialization.SoapElementAttribute(DataType = "integer")] string issue_id, string name, string file_type, [System.Xml.Serialization.SoapElementAttribute(DataType = "base64Binary")] byte[] content);
-
+        
         [System.ServiceModel.OperationContractAttribute(Action = "http://homeserver:8080/mantisbt-2.25.4/api/soap/mantisconnect.php/mc_issue_attach" +
             "ment_add", ReplyAction = "*")]
         [return: System.ServiceModel.MessageParameterAttribute(Name = "return")]
@@ -658,7 +658,7 @@ namespace mantis_tests.Mantis
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(AttachmentData))]
         [return: System.ServiceModel.MessageParameterAttribute(Name = "return")]
         bool mc_issue_attachment_delete(string username, string password, [System.Xml.Serialization.SoapElementAttribute(DataType = "integer")] string issue_attachment_id);
-
+        
         [System.ServiceModel.OperationContractAttribute(Action = "http://homeserver:8080/mantisbt-2.25.4/api/soap/mantisconnect.php/mc_issue_attach" +
             "ment_delete", ReplyAction = "*")]
         [return: System.ServiceModel.MessageParameterAttribute(Name = "return")]
@@ -679,7 +679,7 @@ namespace mantis_tests.Mantis
         [return: System.ServiceModel.MessageParameterAttribute(Name = "return")]
         [return: System.Xml.Serialization.SoapElementAttribute(DataType = "base64Binary")]
         byte[] mc_issue_attachment_get(string username, string password, [System.Xml.Serialization.SoapElementAttribute(DataType = "integer")] string issue_attachment_id);
-
+        
         [System.ServiceModel.OperationContractAttribute(Action = "http://homeserver:8080/mantisbt-2.25.4/api/soap/mantisconnect.php/mc_issue_attach" +
             "ment_get", ReplyAction = "*")]
         [return: System.ServiceModel.MessageParameterAttribute(Name = "return")]
@@ -700,7 +700,7 @@ namespace mantis_tests.Mantis
         [return: System.ServiceModel.MessageParameterAttribute(Name = "return")]
         [return: System.Xml.Serialization.SoapElementAttribute(DataType = "integer")]
         string mc_project_add(string username, string password, mantis_tests.Mantis.ProjectData project);
-
+        
         [System.ServiceModel.OperationContractAttribute(Action = "http://homeserver:8080/mantisbt-2.25.4/api/soap/mantisconnect.php/mc_project_add", ReplyAction = "*")]
         [return: System.ServiceModel.MessageParameterAttribute(Name = "return")]
         [return: System.Xml.Serialization.SoapElementAttribute(DataType = "integer")]
@@ -720,7 +720,7 @@ namespace mantis_tests.Mantis
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(AttachmentData))]
         [return: System.ServiceModel.MessageParameterAttribute(Name = "return")]
         bool mc_project_delete(string username, string password, [System.Xml.Serialization.SoapElementAttribute(DataType = "integer")] string project_id);
-
+        
         [System.ServiceModel.OperationContractAttribute(Action = "http://homeserver:8080/mantisbt-2.25.4/api/soap/mantisconnect.php/mc_project_dele" +
             "te", ReplyAction = "*")]
         [return: System.ServiceModel.MessageParameterAttribute(Name = "return")]
@@ -740,7 +740,7 @@ namespace mantis_tests.Mantis
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(AttachmentData))]
         [return: System.ServiceModel.MessageParameterAttribute(Name = "return")]
         bool mc_project_update(string username, string password, [System.Xml.Serialization.SoapElementAttribute(DataType = "integer")] string project_id, mantis_tests.Mantis.ProjectData project);
-
+        
         [System.ServiceModel.OperationContractAttribute(Action = "http://homeserver:8080/mantisbt-2.25.4/api/soap/mantisconnect.php/mc_project_upda" +
             "te", ReplyAction = "*")]
         [return: System.ServiceModel.MessageParameterAttribute(Name = "return")]
@@ -767,7 +767,7 @@ namespace mantis_tests.Mantis
         [return: System.ServiceModel.MessageParameterAttribute(Name = "return")]
         [return: System.Xml.Serialization.SoapElementAttribute(DataType = "integer")]
         System.Threading.Tasks.Task<string> mc_project_get_id_from_nameAsync(string username, string password, string project_name);
-
+        
         [System.ServiceModel.OperationContractAttribute(Action = "http://homeserver:8080/mantisbt-2.25.4/api/soap/mantisconnect.php/mc_project_get_" +
             "issues_for_user", ReplyAction = "*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(Style = System.ServiceModel.OperationFormatStyle.Rpc, SupportFaults = true, Use = System.ServiceModel.OperationFormatUse.Encoded)]
@@ -782,7 +782,7 @@ namespace mantis_tests.Mantis
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(AttachmentData))]
         [return: System.ServiceModel.MessageParameterAttribute(Name = "return")]
         mantis_tests.Mantis.IssueData[] mc_project_get_issues_for_user(string username, string password, [System.Xml.Serialization.SoapElementAttribute(DataType = "integer")] string project_id, string filter_type, mantis_tests.Mantis.AccountData target_user, [System.Xml.Serialization.SoapElementAttribute(DataType = "integer")] string page_number, [System.Xml.Serialization.SoapElementAttribute(DataType = "integer")] string per_page);
-
+        
         [System.ServiceModel.OperationContractAttribute(Action = "http://homeserver:8080/mantisbt-2.25.4/api/soap/mantisconnect.php/mc_project_get_" +
             "issues_for_user", ReplyAction = "*")]
         [return: System.ServiceModel.MessageParameterAttribute(Name = "return")]
@@ -807,7 +807,7 @@ namespace mantis_tests.Mantis
             "issues", ReplyAction = "*")]
         [return: System.ServiceModel.MessageParameterAttribute(Name = "return")]
         System.Threading.Tasks.Task<mantis_tests.Mantis.IssueData[]> mc_project_get_issuesAsync(string username, string password, [System.Xml.Serialization.SoapElementAttribute(DataType = "integer")] string project_id, [System.Xml.Serialization.SoapElementAttribute(DataType = "integer")] string page_number, [System.Xml.Serialization.SoapElementAttribute(DataType = "integer")] string per_page);
-
+        
         [System.ServiceModel.OperationContractAttribute(Action = "http://homeserver:8080/mantisbt-2.25.4/api/soap/mantisconnect.php/mc_project_get_" +
             "issue_headers", ReplyAction = "*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(Style = System.ServiceModel.OperationFormatStyle.Rpc, SupportFaults = true, Use = System.ServiceModel.OperationFormatUse.Encoded)]
@@ -827,7 +827,7 @@ namespace mantis_tests.Mantis
             "issue_headers", ReplyAction = "*")]
         [return: System.ServiceModel.MessageParameterAttribute(Name = "return")]
         System.Threading.Tasks.Task<mantis_tests.Mantis.IssueHeaderData[]> mc_project_get_issue_headersAsync(string username, string password, [System.Xml.Serialization.SoapElementAttribute(DataType = "integer")] string project_id, [System.Xml.Serialization.SoapElementAttribute(DataType = "integer")] string page_number, [System.Xml.Serialization.SoapElementAttribute(DataType = "integer")] string per_page);
-
+        
         [System.ServiceModel.OperationContractAttribute(Action = "http://homeserver:8080/mantisbt-2.25.4/api/soap/mantisconnect.php/mc_project_get_" +
             "users", ReplyAction = "*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(Style = System.ServiceModel.OperationFormatStyle.Rpc, SupportFaults = true, Use = System.ServiceModel.OperationFormatUse.Encoded)]
@@ -847,7 +847,7 @@ namespace mantis_tests.Mantis
             "users", ReplyAction = "*")]
         [return: System.ServiceModel.MessageParameterAttribute(Name = "return")]
         System.Threading.Tasks.Task<mantis_tests.Mantis.AccountData[]> mc_project_get_usersAsync(string username, string password, [System.Xml.Serialization.SoapElementAttribute(DataType = "integer")] string project_id, [System.Xml.Serialization.SoapElementAttribute(DataType = "integer")] string access);
-
+        
         [System.ServiceModel.OperationContractAttribute(Action = "http://homeserver:8080/mantisbt-2.25.4/api/soap/mantisconnect.php/mc_projects_get" +
             "_user_accessible", ReplyAction = "*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(Style = System.ServiceModel.OperationFormatStyle.Rpc, SupportFaults = true, Use = System.ServiceModel.OperationFormatUse.Encoded)]
@@ -867,7 +867,7 @@ namespace mantis_tests.Mantis
             "_user_accessible", ReplyAction = "*")]
         [return: System.ServiceModel.MessageParameterAttribute(Name = "return")]
         System.Threading.Tasks.Task<mantis_tests.Mantis.ProjectData[]> mc_projects_get_user_accessibleAsync(string username, string password);
-
+        
         [System.ServiceModel.OperationContractAttribute(Action = "http://homeserver:8080/mantisbt-2.25.4/api/soap/mantisconnect.php/mc_project_get_" +
             "categories", ReplyAction = "*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(Style = System.ServiceModel.OperationFormatStyle.Rpc, SupportFaults = true, Use = System.ServiceModel.OperationFormatUse.Encoded)]
@@ -887,7 +887,7 @@ namespace mantis_tests.Mantis
             "categories", ReplyAction = "*")]
         [return: System.ServiceModel.MessageParameterAttribute(Name = "return")]
         System.Threading.Tasks.Task<string[]> mc_project_get_categoriesAsync(string username, string password, [System.Xml.Serialization.SoapElementAttribute(DataType = "integer")] string project_id);
-
+        
         [System.ServiceModel.OperationContractAttribute(Action = "http://homeserver:8080/mantisbt-2.25.4/api/soap/mantisconnect.php/mc_project_add_" +
             "category", ReplyAction = "*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(Style = System.ServiceModel.OperationFormatStyle.Rpc, SupportFaults = true, Use = System.ServiceModel.OperationFormatUse.Encoded)]
@@ -909,7 +909,7 @@ namespace mantis_tests.Mantis
         [return: System.ServiceModel.MessageParameterAttribute(Name = "return")]
         [return: System.Xml.Serialization.SoapElementAttribute(DataType = "integer")]
         System.Threading.Tasks.Task<string> mc_project_add_categoryAsync(string username, string password, [System.Xml.Serialization.SoapElementAttribute(DataType = "integer")] string project_id, string p_category_name);
-
+        
         [System.ServiceModel.OperationContractAttribute(Action = "http://homeserver:8080/mantisbt-2.25.4/api/soap/mantisconnect.php/mc_project_dele" +
             "te_category", ReplyAction = "*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(Style = System.ServiceModel.OperationFormatStyle.Rpc, SupportFaults = true, Use = System.ServiceModel.OperationFormatUse.Encoded)]
@@ -931,7 +931,7 @@ namespace mantis_tests.Mantis
         [return: System.ServiceModel.MessageParameterAttribute(Name = "return")]
         [return: System.Xml.Serialization.SoapElementAttribute(DataType = "integer")]
         System.Threading.Tasks.Task<string> mc_project_delete_categoryAsync(string username, string password, [System.Xml.Serialization.SoapElementAttribute(DataType = "integer")] string project_id, string p_category_name);
-
+        
         [System.ServiceModel.OperationContractAttribute(Action = "http://homeserver:8080/mantisbt-2.25.4/api/soap/mantisconnect.php/mc_project_rena" +
             "me_category_by_name", ReplyAction = "*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(Style = System.ServiceModel.OperationFormatStyle.Rpc, SupportFaults = true, Use = System.ServiceModel.OperationFormatUse.Encoded)]
@@ -953,7 +953,7 @@ namespace mantis_tests.Mantis
         [return: System.ServiceModel.MessageParameterAttribute(Name = "return")]
         [return: System.Xml.Serialization.SoapElementAttribute(DataType = "integer")]
         System.Threading.Tasks.Task<string> mc_project_rename_category_by_nameAsync(string username, string password, [System.Xml.Serialization.SoapElementAttribute(DataType = "integer")] string project_id, string p_category_name, string p_category_name_new, [System.Xml.Serialization.SoapElementAttribute(DataType = "integer")] string p_assigned_to);
-
+        
         [System.ServiceModel.OperationContractAttribute(Action = "http://homeserver:8080/mantisbt-2.25.4/api/soap/mantisconnect.php/mc_project_get_" +
             "versions", ReplyAction = "*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(Style = System.ServiceModel.OperationFormatStyle.Rpc, SupportFaults = true, Use = System.ServiceModel.OperationFormatUse.Encoded)]
@@ -973,7 +973,7 @@ namespace mantis_tests.Mantis
             "versions", ReplyAction = "*")]
         [return: System.ServiceModel.MessageParameterAttribute(Name = "return")]
         System.Threading.Tasks.Task<mantis_tests.Mantis.ProjectVersionData[]> mc_project_get_versionsAsync(string username, string password, [System.Xml.Serialization.SoapElementAttribute(DataType = "integer")] string project_id);
-
+        
         [System.ServiceModel.OperationContractAttribute(Action = "http://homeserver:8080/mantisbt-2.25.4/api/soap/mantisconnect.php/mc_project_vers" +
             "ion_add", ReplyAction = "*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(Style = System.ServiceModel.OperationFormatStyle.Rpc, SupportFaults = true, Use = System.ServiceModel.OperationFormatUse.Encoded)]
@@ -995,7 +995,7 @@ namespace mantis_tests.Mantis
         [return: System.ServiceModel.MessageParameterAttribute(Name = "return")]
         [return: System.Xml.Serialization.SoapElementAttribute(DataType = "integer")]
         System.Threading.Tasks.Task<string> mc_project_version_addAsync(string username, string password, mantis_tests.Mantis.ProjectVersionData version);
-
+        
         [System.ServiceModel.OperationContractAttribute(Action = "http://homeserver:8080/mantisbt-2.25.4/api/soap/mantisconnect.php/mc_project_vers" +
             "ion_update", ReplyAction = "*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(Style = System.ServiceModel.OperationFormatStyle.Rpc, SupportFaults = true, Use = System.ServiceModel.OperationFormatUse.Encoded)]
@@ -1015,7 +1015,7 @@ namespace mantis_tests.Mantis
             "ion_update", ReplyAction = "*")]
         [return: System.ServiceModel.MessageParameterAttribute(Name = "return")]
         System.Threading.Tasks.Task<bool> mc_project_version_updateAsync(string username, string password, [System.Xml.Serialization.SoapElementAttribute(DataType = "integer")] string version_id, mantis_tests.Mantis.ProjectVersionData version);
-
+        
         [System.ServiceModel.OperationContractAttribute(Action = "http://homeserver:8080/mantisbt-2.25.4/api/soap/mantisconnect.php/mc_project_vers" +
             "ion_delete", ReplyAction = "*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(Style = System.ServiceModel.OperationFormatStyle.Rpc, SupportFaults = true, Use = System.ServiceModel.OperationFormatUse.Encoded)]
@@ -1035,7 +1035,7 @@ namespace mantis_tests.Mantis
             "ion_delete", ReplyAction = "*")]
         [return: System.ServiceModel.MessageParameterAttribute(Name = "return")]
         System.Threading.Tasks.Task<bool> mc_project_version_deleteAsync(string username, string password, [System.Xml.Serialization.SoapElementAttribute(DataType = "integer")] string version_id);
-
+        
         [System.ServiceModel.OperationContractAttribute(Action = "http://homeserver:8080/mantisbt-2.25.4/api/soap/mantisconnect.php/mc_project_get_" +
             "released_versions", ReplyAction = "*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(Style = System.ServiceModel.OperationFormatStyle.Rpc, SupportFaults = true, Use = System.ServiceModel.OperationFormatUse.Encoded)]
@@ -1055,7 +1055,7 @@ namespace mantis_tests.Mantis
             "released_versions", ReplyAction = "*")]
         [return: System.ServiceModel.MessageParameterAttribute(Name = "return")]
         System.Threading.Tasks.Task<mantis_tests.Mantis.ProjectVersionData[]> mc_project_get_released_versionsAsync(string username, string password, [System.Xml.Serialization.SoapElementAttribute(DataType = "integer")] string project_id);
-
+        
         [System.ServiceModel.OperationContractAttribute(Action = "http://homeserver:8080/mantisbt-2.25.4/api/soap/mantisconnect.php/mc_project_get_" +
             "unreleased_versions", ReplyAction = "*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(Style = System.ServiceModel.OperationFormatStyle.Rpc, SupportFaults = true, Use = System.ServiceModel.OperationFormatUse.Encoded)]
@@ -1075,7 +1075,7 @@ namespace mantis_tests.Mantis
             "unreleased_versions", ReplyAction = "*")]
         [return: System.ServiceModel.MessageParameterAttribute(Name = "return")]
         System.Threading.Tasks.Task<mantis_tests.Mantis.ProjectVersionData[]> mc_project_get_unreleased_versionsAsync(string username, string password, [System.Xml.Serialization.SoapElementAttribute(DataType = "integer")] string project_id);
-
+        
         [System.ServiceModel.OperationContractAttribute(Action = "http://homeserver:8080/mantisbt-2.25.4/api/soap/mantisconnect.php/mc_project_get_" +
             "attachments", ReplyAction = "*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(Style = System.ServiceModel.OperationFormatStyle.Rpc, SupportFaults = true, Use = System.ServiceModel.OperationFormatUse.Encoded)]
@@ -1095,7 +1095,7 @@ namespace mantis_tests.Mantis
             "attachments", ReplyAction = "*")]
         [return: System.ServiceModel.MessageParameterAttribute(Name = "return")]
         System.Threading.Tasks.Task<mantis_tests.Mantis.ProjectAttachmentData[]> mc_project_get_attachmentsAsync(string username, string password, [System.Xml.Serialization.SoapElementAttribute(DataType = "integer")] string project_id);
-
+        
         [System.ServiceModel.OperationContractAttribute(Action = "http://homeserver:8080/mantisbt-2.25.4/api/soap/mantisconnect.php/mc_project_get_" +
             "custom_fields", ReplyAction = "*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(Style = System.ServiceModel.OperationFormatStyle.Rpc, SupportFaults = true, Use = System.ServiceModel.OperationFormatUse.Encoded)]
@@ -1115,7 +1115,7 @@ namespace mantis_tests.Mantis
             "custom_fields", ReplyAction = "*")]
         [return: System.ServiceModel.MessageParameterAttribute(Name = "return")]
         System.Threading.Tasks.Task<mantis_tests.Mantis.CustomFieldDefinitionData[]> mc_project_get_custom_fieldsAsync(string username, string password, [System.Xml.Serialization.SoapElementAttribute(DataType = "integer")] string project_id);
-
+        
         [System.ServiceModel.OperationContractAttribute(Action = "http://homeserver:8080/mantisbt-2.25.4/api/soap/mantisconnect.php/mc_project_atta" +
             "chment_get", ReplyAction = "*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(Style = System.ServiceModel.OperationFormatStyle.Rpc, SupportFaults = true, Use = System.ServiceModel.OperationFormatUse.Encoded)]
@@ -1137,7 +1137,7 @@ namespace mantis_tests.Mantis
         [return: System.ServiceModel.MessageParameterAttribute(Name = "return")]
         [return: System.Xml.Serialization.SoapElementAttribute(DataType = "base64Binary")]
         System.Threading.Tasks.Task<byte[]> mc_project_attachment_getAsync(string username, string password, [System.Xml.Serialization.SoapElementAttribute(DataType = "integer")] string project_attachment_id);
-
+        
         [System.ServiceModel.OperationContractAttribute(Action = "http://homeserver:8080/mantisbt-2.25.4/api/soap/mantisconnect.php/mc_project_atta" +
             "chment_add", ReplyAction = "*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(Style = System.ServiceModel.OperationFormatStyle.Rpc, SupportFaults = true, Use = System.ServiceModel.OperationFormatUse.Encoded)]
@@ -1159,7 +1159,7 @@ namespace mantis_tests.Mantis
         [return: System.ServiceModel.MessageParameterAttribute(Name = "return")]
         [return: System.Xml.Serialization.SoapElementAttribute(DataType = "integer")]
         System.Threading.Tasks.Task<string> mc_project_attachment_addAsync(string username, string password, [System.Xml.Serialization.SoapElementAttribute(DataType = "integer")] string project_id, string name, string title, string description, string file_type, [System.Xml.Serialization.SoapElementAttribute(DataType = "base64Binary")] byte[] content);
-
+        
         [System.ServiceModel.OperationContractAttribute(Action = "http://homeserver:8080/mantisbt-2.25.4/api/soap/mantisconnect.php/mc_project_atta" +
             "chment_delete", ReplyAction = "*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(Style = System.ServiceModel.OperationFormatStyle.Rpc, SupportFaults = true, Use = System.ServiceModel.OperationFormatUse.Encoded)]
@@ -1179,7 +1179,7 @@ namespace mantis_tests.Mantis
             "chment_delete", ReplyAction = "*")]
         [return: System.ServiceModel.MessageParameterAttribute(Name = "return")]
         System.Threading.Tasks.Task<bool> mc_project_attachment_deleteAsync(string username, string password, [System.Xml.Serialization.SoapElementAttribute(DataType = "integer")] string project_attachment_id);
-
+        
         [System.ServiceModel.OperationContractAttribute(Action = "http://homeserver:8080/mantisbt-2.25.4/api/soap/mantisconnect.php/mc_project_get_" +
             "all_subprojects", ReplyAction = "*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(Style = System.ServiceModel.OperationFormatStyle.Rpc, SupportFaults = true, Use = System.ServiceModel.OperationFormatUse.Encoded)]
@@ -1199,7 +1199,7 @@ namespace mantis_tests.Mantis
             "all_subprojects", ReplyAction = "*")]
         [return: System.ServiceModel.MessageParameterAttribute(Name = "return")]
         System.Threading.Tasks.Task<string[]> mc_project_get_all_subprojectsAsync(string username, string password, [System.Xml.Serialization.SoapElementAttribute(DataType = "integer")] string project_id);
-
+        
         [System.ServiceModel.OperationContractAttribute(Action = "http://homeserver:8080/mantisbt-2.25.4/api/soap/mantisconnect.php/mc_filter_get", ReplyAction = "*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(Style = System.ServiceModel.OperationFormatStyle.Rpc, SupportFaults = true, Use = System.ServiceModel.OperationFormatUse.Encoded)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ProfileData))]
@@ -1217,7 +1217,7 @@ namespace mantis_tests.Mantis
         [System.ServiceModel.OperationContractAttribute(Action = "http://homeserver:8080/mantisbt-2.25.4/api/soap/mantisconnect.php/mc_filter_get", ReplyAction = "*")]
         [return: System.ServiceModel.MessageParameterAttribute(Name = "return")]
         System.Threading.Tasks.Task<mantis_tests.Mantis.FilterData[]> mc_filter_getAsync(string username, string password, [System.Xml.Serialization.SoapElementAttribute(DataType = "integer")] string project_id);
-
+        
         [System.ServiceModel.OperationContractAttribute(Action = "http://homeserver:8080/mantisbt-2.25.4/api/soap/mantisconnect.php/mc_filter_get_i" +
             "ssues", ReplyAction = "*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(Style = System.ServiceModel.OperationFormatStyle.Rpc, SupportFaults = true, Use = System.ServiceModel.OperationFormatUse.Encoded)]
@@ -1237,7 +1237,7 @@ namespace mantis_tests.Mantis
             "ssues", ReplyAction = "*")]
         [return: System.ServiceModel.MessageParameterAttribute(Name = "return")]
         System.Threading.Tasks.Task<mantis_tests.Mantis.IssueData[]> mc_filter_get_issuesAsync(string username, string password, [System.Xml.Serialization.SoapElementAttribute(DataType = "integer")] string project_id, [System.Xml.Serialization.SoapElementAttribute(DataType = "integer")] string filter_id, [System.Xml.Serialization.SoapElementAttribute(DataType = "integer")] string page_number, [System.Xml.Serialization.SoapElementAttribute(DataType = "integer")] string per_page);
-
+        
         [System.ServiceModel.OperationContractAttribute(Action = "http://homeserver:8080/mantisbt-2.25.4/api/soap/mantisconnect.php/mc_filter_get_i" +
             "ssue_headers", ReplyAction = "*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(Style = System.ServiceModel.OperationFormatStyle.Rpc, SupportFaults = true, Use = System.ServiceModel.OperationFormatUse.Encoded)]
@@ -1257,7 +1257,7 @@ namespace mantis_tests.Mantis
             "ssue_headers", ReplyAction = "*")]
         [return: System.ServiceModel.MessageParameterAttribute(Name = "return")]
         System.Threading.Tasks.Task<mantis_tests.Mantis.IssueHeaderData[]> mc_filter_get_issue_headersAsync(string username, string password, [System.Xml.Serialization.SoapElementAttribute(DataType = "integer")] string project_id, [System.Xml.Serialization.SoapElementAttribute(DataType = "integer")] string filter_id, [System.Xml.Serialization.SoapElementAttribute(DataType = "integer")] string page_number, [System.Xml.Serialization.SoapElementAttribute(DataType = "integer")] string per_page);
-
+        
         [System.ServiceModel.OperationContractAttribute(Action = "http://homeserver:8080/mantisbt-2.25.4/api/soap/mantisconnect.php/mc_filter_searc" +
             "h_issue_headers", ReplyAction = "*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(Style = System.ServiceModel.OperationFormatStyle.Rpc, SupportFaults = true, Use = System.ServiceModel.OperationFormatUse.Encoded)]
@@ -1277,7 +1277,7 @@ namespace mantis_tests.Mantis
             "h_issue_headers", ReplyAction = "*")]
         [return: System.ServiceModel.MessageParameterAttribute(Name = "return")]
         System.Threading.Tasks.Task<mantis_tests.Mantis.IssueHeaderData[]> mc_filter_search_issue_headersAsync(string username, string password, mantis_tests.Mantis.FilterSearchData filter, [System.Xml.Serialization.SoapElementAttribute(DataType = "integer")] string page_number, [System.Xml.Serialization.SoapElementAttribute(DataType = "integer")] string per_page);
-
+        
         [System.ServiceModel.OperationContractAttribute(Action = "http://homeserver:8080/mantisbt-2.25.4/api/soap/mantisconnect.php/mc_filter_searc" +
             "h_issues", ReplyAction = "*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(Style = System.ServiceModel.OperationFormatStyle.Rpc, SupportFaults = true, Use = System.ServiceModel.OperationFormatUse.Encoded)]
@@ -1297,7 +1297,7 @@ namespace mantis_tests.Mantis
             "h_issues", ReplyAction = "*")]
         [return: System.ServiceModel.MessageParameterAttribute(Name = "return")]
         System.Threading.Tasks.Task<mantis_tests.Mantis.IssueData[]> mc_filter_search_issuesAsync(string username, string password, mantis_tests.Mantis.FilterSearchData filter, [System.Xml.Serialization.SoapElementAttribute(DataType = "integer")] string page_number, [System.Xml.Serialization.SoapElementAttribute(DataType = "integer")] string per_page);
-
+        
         [System.ServiceModel.OperationContractAttribute(Action = "http://homeserver:8080/mantisbt-2.25.4/api/soap/mantisconnect.php/mc_filter_searc" +
             "h_issue_ids", ReplyAction = "*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(Style = System.ServiceModel.OperationFormatStyle.Rpc, SupportFaults = true, Use = System.ServiceModel.OperationFormatUse.Encoded)]
@@ -1317,7 +1317,7 @@ namespace mantis_tests.Mantis
             "h_issue_ids", ReplyAction = "*")]
         [return: System.ServiceModel.MessageParameterAttribute(Name = "return")]
         System.Threading.Tasks.Task<string[]> mc_filter_search_issue_idsAsync(string username, string password, mantis_tests.Mantis.FilterSearchData filter, [System.Xml.Serialization.SoapElementAttribute(DataType = "integer")] string page_number, [System.Xml.Serialization.SoapElementAttribute(DataType = "integer")] string per_page);
-
+        
         [System.ServiceModel.OperationContractAttribute(Action = "http://homeserver:8080/mantisbt-2.25.4/api/soap/mantisconnect.php/mc_config_get_s" +
             "tring", ReplyAction = "*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(Style = System.ServiceModel.OperationFormatStyle.Rpc, SupportFaults = true, Use = System.ServiceModel.OperationFormatUse.Encoded)]
@@ -1337,7 +1337,7 @@ namespace mantis_tests.Mantis
             "tring", ReplyAction = "*")]
         [return: System.ServiceModel.MessageParameterAttribute(Name = "return")]
         System.Threading.Tasks.Task<string> mc_config_get_stringAsync(string username, string password, string config_var);
-
+        
         [System.ServiceModel.OperationContractAttribute(Action = "http://homeserver:8080/mantisbt-2.25.4/api/soap/mantisconnect.php/mc_issue_checki" +
             "n", ReplyAction = "*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(Style = System.ServiceModel.OperationFormatStyle.Rpc, SupportFaults = true, Use = System.ServiceModel.OperationFormatUse.Encoded)]
@@ -1357,7 +1357,7 @@ namespace mantis_tests.Mantis
             "n", ReplyAction = "*")]
         [return: System.ServiceModel.MessageParameterAttribute(Name = "return")]
         System.Threading.Tasks.Task<bool> mc_issue_checkinAsync(string username, string password, [System.Xml.Serialization.SoapElementAttribute(DataType = "integer")] string issue_id, string comment, bool @fixed);
-
+        
         [System.ServiceModel.OperationContractAttribute(Action = "http://homeserver:8080/mantisbt-2.25.4/api/soap/mantisconnect.php/mc_user_pref_ge" +
             "t_pref", ReplyAction = "*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(Style = System.ServiceModel.OperationFormatStyle.Rpc, SupportFaults = true, Use = System.ServiceModel.OperationFormatUse.Encoded)]
@@ -1377,7 +1377,7 @@ namespace mantis_tests.Mantis
             "t_pref", ReplyAction = "*")]
         [return: System.ServiceModel.MessageParameterAttribute(Name = "return")]
         System.Threading.Tasks.Task<string> mc_user_pref_get_prefAsync(string username, string password, [System.Xml.Serialization.SoapElementAttribute(DataType = "integer")] string project_id, string pref_name);
-
+        
         [System.ServiceModel.OperationContractAttribute(Action = "http://homeserver:8080/mantisbt-2.25.4/api/soap/mantisconnect.php/mc_user_profile" +
             "s_get_all", ReplyAction = "*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(Style = System.ServiceModel.OperationFormatStyle.Rpc, SupportFaults = true, Use = System.ServiceModel.OperationFormatUse.Encoded)]
@@ -1397,7 +1397,7 @@ namespace mantis_tests.Mantis
             "s_get_all", ReplyAction = "*")]
         [return: System.ServiceModel.MessageParameterAttribute(Name = "return")]
         System.Threading.Tasks.Task<mantis_tests.Mantis.ProfileDataSearchResult> mc_user_profiles_get_allAsync(string username, string password, [System.Xml.Serialization.SoapElementAttribute(DataType = "integer")] string page_number, [System.Xml.Serialization.SoapElementAttribute(DataType = "integer")] string per_page);
-
+        
         [System.ServiceModel.OperationContractAttribute(Action = "http://homeserver:8080/mantisbt-2.25.4/api/soap/mantisconnect.php/mc_tag_get_all", ReplyAction = "*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(Style = System.ServiceModel.OperationFormatStyle.Rpc, SupportFaults = true, Use = System.ServiceModel.OperationFormatUse.Encoded)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ProfileData))]
@@ -1415,7 +1415,7 @@ namespace mantis_tests.Mantis
         [System.ServiceModel.OperationContractAttribute(Action = "http://homeserver:8080/mantisbt-2.25.4/api/soap/mantisconnect.php/mc_tag_get_all", ReplyAction = "*")]
         [return: System.ServiceModel.MessageParameterAttribute(Name = "return")]
         System.Threading.Tasks.Task<mantis_tests.Mantis.TagDataSearchResult> mc_tag_get_allAsync(string username, string password, [System.Xml.Serialization.SoapElementAttribute(DataType = "integer")] string page_number, [System.Xml.Serialization.SoapElementAttribute(DataType = "integer")] string per_page);
-
+        
         [System.ServiceModel.OperationContractAttribute(Action = "http://homeserver:8080/mantisbt-2.25.4/api/soap/mantisconnect.php/mc_tag_add", ReplyAction = "*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(Style = System.ServiceModel.OperationFormatStyle.Rpc, SupportFaults = true, Use = System.ServiceModel.OperationFormatUse.Encoded)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ProfileData))]
@@ -1435,7 +1435,7 @@ namespace mantis_tests.Mantis
         [return: System.ServiceModel.MessageParameterAttribute(Name = "return")]
         [return: System.Xml.Serialization.SoapElementAttribute(DataType = "integer")]
         System.Threading.Tasks.Task<string> mc_tag_addAsync(string username, string password, mantis_tests.Mantis.TagData tag);
-
+        
         [System.ServiceModel.OperationContractAttribute(Action = "http://homeserver:8080/mantisbt-2.25.4/api/soap/mantisconnect.php/mc_tag_delete", ReplyAction = "*")]
         [System.ServiceModel.XmlSerializerFormatAttribute(Style = System.ServiceModel.OperationFormatStyle.Rpc, SupportFaults = true, Use = System.ServiceModel.OperationFormatUse.Encoded)]
         [System.ServiceModel.ServiceKnownTypeAttribute(typeof(ProfileData))]
@@ -1454,7 +1454,7 @@ namespace mantis_tests.Mantis
         [return: System.ServiceModel.MessageParameterAttribute(Name = "return")]
         System.Threading.Tasks.Task<bool> mc_tag_deleteAsync(string username, string password, [System.Xml.Serialization.SoapElementAttribute(DataType = "integer")] string tag_id);
     }
-
+    
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.4161.0")]
     [System.SerializableAttribute()]
@@ -1463,11 +1463,11 @@ namespace mantis_tests.Mantis
     [System.Xml.Serialization.SoapTypeAttribute(Namespace = "http://futureware.biz/mantisconnect")]
     public partial class UserData : object, System.ComponentModel.INotifyPropertyChanged
     {
-
+        
         private AccountData account_dataField;
-
+        
         private string access_levelField;
-
+        
         private string timezoneField;
 
         /// <remarks/>
@@ -1483,7 +1483,7 @@ namespace mantis_tests.Mantis
                 this.RaisePropertyChanged("account_data");
             }
         }
-
+        
         /// <remarks/>
         [System.Xml.Serialization.SoapElementAttribute(DataType = "integer")]
         public string access_level
@@ -1524,7 +1524,7 @@ namespace mantis_tests.Mantis
             }
         }
     }
-
+    
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.4161.0")]
     [System.SerializableAttribute()]
@@ -1533,15 +1533,15 @@ namespace mantis_tests.Mantis
     [System.Xml.Serialization.SoapTypeAttribute(Namespace = "http://futureware.biz/mantisconnect")]
     public partial class AccountData : object, System.ComponentModel.INotifyPropertyChanged
     {
-
+        
         private string idField;
-
+        
         private string nameField;
-
+        
         private string real_nameField;
-
+        
         private string emailField;
-
+        
         /// <remarks/>
         [System.Xml.Serialization.SoapElementAttribute(DataType = "integer")]
         public string id
@@ -1610,7 +1610,7 @@ namespace mantis_tests.Mantis
             }
         }
     }
-
+    
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.4161.0")]
     [System.SerializableAttribute()]
@@ -1619,9 +1619,9 @@ namespace mantis_tests.Mantis
     [System.Xml.Serialization.SoapTypeAttribute(Namespace = "http://futureware.biz/mantisconnect")]
     public partial class TagDataSearchResult : object, System.ComponentModel.INotifyPropertyChanged
     {
-
+        
         private TagData[] resultsField;
-
+        
         private string total_resultsField;
 
         /// <remarks/>
@@ -1637,7 +1637,7 @@ namespace mantis_tests.Mantis
                 this.RaisePropertyChanged("results");
             }
         }
-
+        
         /// <remarks/>
         [System.Xml.Serialization.SoapElementAttribute(DataType = "integer")]
         public string total_results
@@ -1664,7 +1664,7 @@ namespace mantis_tests.Mantis
             }
         }
     }
-
+    
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.4161.0")]
     [System.SerializableAttribute()]
@@ -1673,23 +1673,23 @@ namespace mantis_tests.Mantis
     [System.Xml.Serialization.SoapTypeAttribute(Namespace = "http://futureware.biz/mantisconnect")]
     public partial class TagData : object, System.ComponentModel.INotifyPropertyChanged
     {
-
+        
         private string idField;
-
+        
         private AccountData user_idField;
-
+        
         private string nameField;
-
+        
         private string descriptionField;
-
+        
         private System.DateTime date_createdField;
-
+        
         private bool date_createdFieldSpecified;
-
+        
         private System.DateTime date_updatedField;
-
+        
         private bool date_updatedFieldSpecified;
-
+        
         /// <remarks/>
         [System.Xml.Serialization.SoapElementAttribute(DataType = "integer")]
         public string id
@@ -1816,7 +1816,7 @@ namespace mantis_tests.Mantis
             }
         }
     }
-
+    
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.4161.0")]
     [System.SerializableAttribute()]
@@ -1825,19 +1825,19 @@ namespace mantis_tests.Mantis
     [System.Xml.Serialization.SoapTypeAttribute(Namespace = "http://futureware.biz/mantisconnect")]
     public partial class ProfileData : object, System.ComponentModel.INotifyPropertyChanged
     {
-
+        
         private string idField;
-
+        
         private AccountData user_idField;
-
+        
         private string platformField;
-
+        
         private string osField;
-
+        
         private string os_buildField;
-
+        
         private string descriptionField;
-
+        
         /// <remarks/>
         [System.Xml.Serialization.SoapElementAttribute(DataType = "integer")]
         public string id
@@ -1931,10 +1931,10 @@ namespace mantis_tests.Mantis
             if ((propertyChanged != null))
             {
                 propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
-            }
+    }
         }
     }
-
+    
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.4161.0")]
     [System.SerializableAttribute()]
@@ -1943,9 +1943,9 @@ namespace mantis_tests.Mantis
     [System.Xml.Serialization.SoapTypeAttribute(Namespace = "http://futureware.biz/mantisconnect")]
     public partial class ProfileDataSearchResult : object, System.ComponentModel.INotifyPropertyChanged
     {
-
+        
         private ProfileData[] resultsField;
-
+        
         private string total_resultsField;
 
         /// <remarks/>
@@ -1961,7 +1961,7 @@ namespace mantis_tests.Mantis
                 this.RaisePropertyChanged("results");
             }
         }
-
+        
         /// <remarks/>
         [System.Xml.Serialization.SoapElementAttribute(DataType = "integer")]
         public string total_results
@@ -1985,10 +1985,10 @@ namespace mantis_tests.Mantis
             if ((propertyChanged != null))
             {
                 propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
-            }
+    }
         }
     }
-
+    
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.4161.0")]
     [System.SerializableAttribute()]
@@ -1997,9 +1997,9 @@ namespace mantis_tests.Mantis
     [System.Xml.Serialization.SoapTypeAttribute(Namespace = "http://futureware.biz/mantisconnect")]
     public partial class FilterCustomField : object, System.ComponentModel.INotifyPropertyChanged
     {
-
+        
         private ObjectRef fieldField;
-
+        
         private string[] valueField;
 
         /// <remarks/>
@@ -2038,10 +2038,10 @@ namespace mantis_tests.Mantis
             if ((propertyChanged != null))
             {
                 propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
-            }
+    }
         }
     }
-
+    
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.4161.0")]
     [System.SerializableAttribute()]
@@ -2050,11 +2050,11 @@ namespace mantis_tests.Mantis
     [System.Xml.Serialization.SoapTypeAttribute(Namespace = "http://futureware.biz/mantisconnect")]
     public partial class ObjectRef : object, System.ComponentModel.INotifyPropertyChanged
     {
-
+        
         private string idField;
-
+        
         private string nameField;
-
+        
         /// <remarks/>
         [System.Xml.Serialization.SoapElementAttribute(DataType = "integer")]
         public string id
@@ -2092,10 +2092,10 @@ namespace mantis_tests.Mantis
             if ((propertyChanged != null))
             {
                 propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
-            }
+    }
         }
     }
-
+    
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.4161.0")]
     [System.SerializableAttribute()]
@@ -2104,81 +2104,81 @@ namespace mantis_tests.Mantis
     [System.Xml.Serialization.SoapTypeAttribute(Namespace = "http://futureware.biz/mantisconnect")]
     public partial class FilterSearchData : object, System.ComponentModel.INotifyPropertyChanged
     {
-
+        
         private string[] project_idField;
-
+        
         private string searchField;
-
+        
         private string[] categoryField;
-
+        
         private string[] severity_idField;
-
+        
         private string[] status_idField;
-
+        
         private string[] priority_idField;
-
+        
         private string[] reporter_idField;
-
+        
         private string[] handler_idField;
-
+        
         private string[] note_user_idField;
-
+        
         private string[] resolution_idField;
-
+        
         private string[] product_versionField;
-
+        
         private string[] user_monitor_idField;
-
+        
         private string[] hide_status_idField;
-
+        
         private string sortField;
-
+        
         private string sort_directionField;
-
+        
         private bool stickyField;
-
+        
         private bool stickyFieldSpecified;
-
+        
         private string[] view_state_idField;
-
+        
         private string[] fixed_in_versionField;
-
+        
         private string[] target_versionField;
-
+        
         private string[] platformField;
-
+        
         private string[] osField;
-
+        
         private string[] os_buildField;
-
+        
         private string start_dayField;
-
+        
         private string start_monthField;
-
+        
         private string start_yearField;
-
+        
         private string end_dayField;
-
+        
         private string end_monthField;
-
+        
         private string end_yearField;
-
+        
         private string last_update_start_dayField;
-
+        
         private string last_update_start_monthField;
-
+        
         private string last_update_start_yearField;
-
+        
         private string last_update_end_dayField;
-
+        
         private string last_update_end_monthField;
-
+        
         private string last_update_end_yearField;
-
+        
         private string[] tag_stringField;
-
+        
         private string[] tag_selectField;
-
+        
         private FilterCustomField[] custom_fieldsField;
 
         /// <remarks/>
@@ -2503,7 +2503,7 @@ namespace mantis_tests.Mantis
                 this.RaisePropertyChanged("os_build");
             }
         }
-
+        
         /// <remarks/>
         [System.Xml.Serialization.SoapElementAttribute(DataType = "integer")]
         public string start_day
@@ -2518,7 +2518,7 @@ namespace mantis_tests.Mantis
                 this.RaisePropertyChanged("start_day");
             }
         }
-
+        
         /// <remarks/>
         [System.Xml.Serialization.SoapElementAttribute(DataType = "integer")]
         public string start_month
@@ -2533,7 +2533,7 @@ namespace mantis_tests.Mantis
                 this.RaisePropertyChanged("start_month");
             }
         }
-
+        
         /// <remarks/>
         [System.Xml.Serialization.SoapElementAttribute(DataType = "integer")]
         public string start_year
@@ -2548,7 +2548,7 @@ namespace mantis_tests.Mantis
                 this.RaisePropertyChanged("start_year");
             }
         }
-
+        
         /// <remarks/>
         [System.Xml.Serialization.SoapElementAttribute(DataType = "integer")]
         public string end_day
@@ -2563,7 +2563,7 @@ namespace mantis_tests.Mantis
                 this.RaisePropertyChanged("end_day");
             }
         }
-
+        
         /// <remarks/>
         [System.Xml.Serialization.SoapElementAttribute(DataType = "integer")]
         public string end_month
@@ -2578,7 +2578,7 @@ namespace mantis_tests.Mantis
                 this.RaisePropertyChanged("end_month");
             }
         }
-
+        
         /// <remarks/>
         [System.Xml.Serialization.SoapElementAttribute(DataType = "integer")]
         public string end_year
@@ -2593,7 +2593,7 @@ namespace mantis_tests.Mantis
                 this.RaisePropertyChanged("end_year");
             }
         }
-
+        
         /// <remarks/>
         [System.Xml.Serialization.SoapElementAttribute(DataType = "integer")]
         public string last_update_start_day
@@ -2608,7 +2608,7 @@ namespace mantis_tests.Mantis
                 this.RaisePropertyChanged("last_update_start_day");
             }
         }
-
+        
         /// <remarks/>
         [System.Xml.Serialization.SoapElementAttribute(DataType = "integer")]
         public string last_update_start_month
@@ -2623,7 +2623,7 @@ namespace mantis_tests.Mantis
                 this.RaisePropertyChanged("last_update_start_month");
             }
         }
-
+        
         /// <remarks/>
         [System.Xml.Serialization.SoapElementAttribute(DataType = "integer")]
         public string last_update_start_year
@@ -2638,7 +2638,7 @@ namespace mantis_tests.Mantis
                 this.RaisePropertyChanged("last_update_start_year");
             }
         }
-
+        
         /// <remarks/>
         [System.Xml.Serialization.SoapElementAttribute(DataType = "integer")]
         public string last_update_end_day
@@ -2653,7 +2653,7 @@ namespace mantis_tests.Mantis
                 this.RaisePropertyChanged("last_update_end_day");
             }
         }
-
+        
         /// <remarks/>
         [System.Xml.Serialization.SoapElementAttribute(DataType = "integer")]
         public string last_update_end_month
@@ -2668,7 +2668,7 @@ namespace mantis_tests.Mantis
                 this.RaisePropertyChanged("last_update_end_month");
             }
         }
-
+        
         /// <remarks/>
         [System.Xml.Serialization.SoapElementAttribute(DataType = "integer")]
         public string last_update_end_year
@@ -2734,10 +2734,10 @@ namespace mantis_tests.Mantis
             if ((propertyChanged != null))
             {
                 propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
-            }
+    }
         }
     }
-
+    
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.4161.0")]
     [System.SerializableAttribute()]
@@ -2746,23 +2746,23 @@ namespace mantis_tests.Mantis
     [System.Xml.Serialization.SoapTypeAttribute(Namespace = "http://futureware.biz/mantisconnect")]
     public partial class FilterData : object, System.ComponentModel.INotifyPropertyChanged
     {
-
+        
         private string idField;
-
+        
         private AccountData ownerField;
-
+        
         private string project_idField;
-
+        
         private bool is_publicField;
-
+        
         private bool is_publicFieldSpecified;
-
+        
         private string nameField;
-
+        
         private string filter_stringField;
-
+        
         private string urlField;
-
+        
         /// <remarks/>
         [System.Xml.Serialization.SoapElementAttribute(DataType = "integer")]
         public string id
@@ -2791,7 +2791,7 @@ namespace mantis_tests.Mantis
                 this.RaisePropertyChanged("owner");
             }
         }
-
+        
         /// <remarks/>
         [System.Xml.Serialization.SoapElementAttribute(DataType = "integer")]
         public string project_id
@@ -2886,10 +2886,10 @@ namespace mantis_tests.Mantis
             if ((propertyChanged != null))
             {
                 propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
-            }
+    }
         }
     }
-
+    
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.4161.0")]
     [System.SerializableAttribute()]
@@ -2898,59 +2898,59 @@ namespace mantis_tests.Mantis
     [System.Xml.Serialization.SoapTypeAttribute(Namespace = "http://futureware.biz/mantisconnect")]
     public partial class CustomFieldDefinitionData : object, System.ComponentModel.INotifyPropertyChanged
     {
-
+        
         private ObjectRef fieldField;
-
+        
         private string typeField;
-
+        
         private string possible_valuesField;
-
+        
         private string default_valueField;
-
+        
         private string valid_regexpField;
-
+        
         private string access_level_rField;
-
+        
         private string access_level_rwField;
-
+        
         private string length_minField;
-
+        
         private string length_maxField;
-
+        
         private bool advancedField;
-
+        
         private bool advancedFieldSpecified;
-
+        
         private bool display_reportField;
-
+        
         private bool display_reportFieldSpecified;
-
+        
         private bool display_updateField;
-
+        
         private bool display_updateFieldSpecified;
-
+        
         private bool display_resolvedField;
-
+        
         private bool display_resolvedFieldSpecified;
-
+        
         private bool display_closedField;
-
+        
         private bool display_closedFieldSpecified;
-
+        
         private bool require_reportField;
-
+        
         private bool require_reportFieldSpecified;
-
+        
         private bool require_updateField;
-
+        
         private bool require_updateFieldSpecified;
-
+        
         private bool require_resolvedField;
-
+        
         private bool require_resolvedFieldSpecified;
-
+        
         private bool require_closedField;
-
+        
         private bool require_closedFieldSpecified;
 
         /// <remarks/>
@@ -2966,7 +2966,7 @@ namespace mantis_tests.Mantis
                 this.RaisePropertyChanged("field");
             }
         }
-
+        
         /// <remarks/>
         [System.Xml.Serialization.SoapElementAttribute(DataType = "integer")]
         public string type
@@ -3023,7 +3023,7 @@ namespace mantis_tests.Mantis
                 this.RaisePropertyChanged("valid_regexp");
             }
         }
-
+        
         /// <remarks/>
         [System.Xml.Serialization.SoapElementAttribute(DataType = "integer")]
         public string access_level_r
@@ -3038,7 +3038,7 @@ namespace mantis_tests.Mantis
                 this.RaisePropertyChanged("access_level_r");
             }
         }
-
+        
         /// <remarks/>
         [System.Xml.Serialization.SoapElementAttribute(DataType = "integer")]
         public string access_level_rw
@@ -3053,7 +3053,7 @@ namespace mantis_tests.Mantis
                 this.RaisePropertyChanged("access_level_rw");
             }
         }
-
+        
         /// <remarks/>
         [System.Xml.Serialization.SoapElementAttribute(DataType = "integer")]
         public string length_min
@@ -3068,7 +3068,7 @@ namespace mantis_tests.Mantis
                 this.RaisePropertyChanged("length_min");
             }
         }
-
+        
         /// <remarks/>
         [System.Xml.Serialization.SoapElementAttribute(DataType = "integer")]
         public string length_max
@@ -3353,10 +3353,10 @@ namespace mantis_tests.Mantis
             if ((propertyChanged != null))
             {
                 propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
-            }
+    }
         }
     }
-
+    
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.4161.0")]
     [System.SerializableAttribute()]
@@ -3365,27 +3365,27 @@ namespace mantis_tests.Mantis
     [System.Xml.Serialization.SoapTypeAttribute(Namespace = "http://futureware.biz/mantisconnect")]
     public partial class ProjectAttachmentData : object, System.ComponentModel.INotifyPropertyChanged
     {
-
+        
         private string idField;
-
+        
         private string filenameField;
-
+        
         private string titleField;
-
+        
         private string descriptionField;
-
+        
         private string sizeField;
-
+        
         private string content_typeField;
-
+        
         private System.DateTime date_submittedField;
-
+        
         private bool date_submittedFieldSpecified;
-
+        
         private string download_urlField;
-
+        
         private string user_idField;
-
+        
         /// <remarks/>
         [System.Xml.Serialization.SoapElementAttribute(DataType = "integer")]
         public string id
@@ -3442,7 +3442,7 @@ namespace mantis_tests.Mantis
                 this.RaisePropertyChanged("description");
             }
         }
-
+        
         /// <remarks/>
         [System.Xml.Serialization.SoapElementAttribute(DataType = "integer")]
         public string size
@@ -3500,7 +3500,7 @@ namespace mantis_tests.Mantis
                 this.RaisePropertyChanged("date_submittedSpecified");
             }
         }
-
+        
         /// <remarks/>
         [System.Xml.Serialization.SoapElementAttribute(DataType = "anyURI")]
         public string download_url
@@ -3515,7 +3515,7 @@ namespace mantis_tests.Mantis
                 this.RaisePropertyChanged("download_url");
             }
         }
-
+        
         /// <remarks/>
         [System.Xml.Serialization.SoapElementAttribute(DataType = "integer")]
         public string user_id
@@ -3539,10 +3539,10 @@ namespace mantis_tests.Mantis
             if ((propertyChanged != null))
             {
                 propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
-            }
+    }
         }
     }
-
+    
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.4161.0")]
     [System.SerializableAttribute()]
@@ -3551,27 +3551,27 @@ namespace mantis_tests.Mantis
     [System.Xml.Serialization.SoapTypeAttribute(Namespace = "http://futureware.biz/mantisconnect")]
     public partial class ProjectVersionData : object, System.ComponentModel.INotifyPropertyChanged
     {
-
+        
         private string idField;
-
+        
         private string nameField;
-
+        
         private string project_idField;
-
+        
         private System.DateTime date_orderField;
-
+        
         private bool date_orderFieldSpecified;
-
+        
         private string descriptionField;
-
+        
         private bool releasedField;
-
+        
         private bool releasedFieldSpecified;
-
+        
         private bool obsoleteField;
-
+        
         private bool obsoleteFieldSpecified;
-
+        
         /// <remarks/>
         [System.Xml.Serialization.SoapElementAttribute(DataType = "integer")]
         public string id
@@ -3600,7 +3600,7 @@ namespace mantis_tests.Mantis
                 this.RaisePropertyChanged("name");
             }
         }
-
+        
         /// <remarks/>
         [System.Xml.Serialization.SoapElementAttribute(DataType = "integer")]
         public string project_id
@@ -3725,10 +3725,10 @@ namespace mantis_tests.Mantis
             if ((propertyChanged != null))
             {
                 propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
-            }
+    }
         }
     }
-
+    
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.4161.0")]
     [System.SerializableAttribute()]
@@ -3737,31 +3737,31 @@ namespace mantis_tests.Mantis
     [System.Xml.Serialization.SoapTypeAttribute(Namespace = "http://futureware.biz/mantisconnect")]
     public partial class ProjectData : object, System.ComponentModel.INotifyPropertyChanged
     {
-
+        
         private string idField;
-
+        
         private string nameField;
-
+        
         private ObjectRef statusField;
-
+        
         private bool enabledField;
-
+        
         private bool enabledFieldSpecified;
-
+        
         private ObjectRef view_stateField;
-
+        
         private ObjectRef access_minField;
-
+        
         private string file_pathField;
-
+        
         private string descriptionField;
-
+        
         private ProjectData[] subprojectsField;
-
+        
         private bool inherit_globalField;
-
+        
         private bool inherit_globalFieldSpecified;
-
+        
         /// <remarks/>
         [System.Xml.Serialization.SoapElementAttribute(DataType = "integer")]
         public string id
@@ -3941,10 +3941,10 @@ namespace mantis_tests.Mantis
             if ((propertyChanged != null))
             {
                 propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
-            }
+    }
         }
     }
-
+    
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.4161.0")]
     [System.SerializableAttribute()]
@@ -3953,21 +3953,21 @@ namespace mantis_tests.Mantis
     [System.Xml.Serialization.SoapTypeAttribute(Namespace = "http://futureware.biz/mantisconnect")]
     public partial class HistoryData : object, System.ComponentModel.INotifyPropertyChanged
     {
-
+        
         private string dateField;
-
+        
         private string useridField;
-
+        
         private string usernameField;
-
+        
         private string fieldField;
-
+        
         private string typeField;
-
+        
         private string old_valueField;
-
+        
         private string new_valueField;
-
+        
         /// <remarks/>
         [System.Xml.Serialization.SoapElementAttribute(DataType = "integer")]
         public string date
@@ -3982,7 +3982,7 @@ namespace mantis_tests.Mantis
                 this.RaisePropertyChanged("date");
             }
         }
-
+        
         /// <remarks/>
         [System.Xml.Serialization.SoapElementAttribute(DataType = "integer")]
         public string userid
@@ -4025,7 +4025,7 @@ namespace mantis_tests.Mantis
                 this.RaisePropertyChanged("field");
             }
         }
-
+        
         /// <remarks/>
         [System.Xml.Serialization.SoapElementAttribute(DataType = "integer")]
         public string type
@@ -4077,10 +4077,10 @@ namespace mantis_tests.Mantis
             if ((propertyChanged != null))
             {
                 propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
-            }
+    }
         }
     }
-
+    
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.4161.0")]
     [System.SerializableAttribute()]
@@ -4089,35 +4089,35 @@ namespace mantis_tests.Mantis
     [System.Xml.Serialization.SoapTypeAttribute(Namespace = "http://futureware.biz/mantisconnect")]
     public partial class IssueHeaderData : object, System.ComponentModel.INotifyPropertyChanged
     {
-
+        
         private string idField;
-
+        
         private string view_stateField;
-
+        
         private System.DateTime last_updatedField;
-
+        
         private string projectField;
-
+        
         private string categoryField;
-
+        
         private string priorityField;
-
+        
         private string severityField;
-
+        
         private string statusField;
-
+        
         private string reporterField;
-
+        
         private string summaryField;
-
+        
         private string handlerField;
-
+        
         private string resolutionField;
-
+        
         private string attachments_countField;
-
+        
         private string notes_countField;
-
+        
         /// <remarks/>
         [System.Xml.Serialization.SoapElementAttribute(DataType = "integer")]
         public string id
@@ -4132,7 +4132,7 @@ namespace mantis_tests.Mantis
                 this.RaisePropertyChanged("id");
             }
         }
-
+        
         /// <remarks/>
         [System.Xml.Serialization.SoapElementAttribute(DataType = "integer")]
         public string view_state
@@ -4161,7 +4161,7 @@ namespace mantis_tests.Mantis
                 this.RaisePropertyChanged("last_updated");
             }
         }
-
+        
         /// <remarks/>
         [System.Xml.Serialization.SoapElementAttribute(DataType = "integer")]
         public string project
@@ -4190,7 +4190,7 @@ namespace mantis_tests.Mantis
                 this.RaisePropertyChanged("category");
             }
         }
-
+        
         /// <remarks/>
         [System.Xml.Serialization.SoapElementAttribute(DataType = "integer")]
         public string priority
@@ -4205,7 +4205,7 @@ namespace mantis_tests.Mantis
                 this.RaisePropertyChanged("priority");
             }
         }
-
+        
         /// <remarks/>
         [System.Xml.Serialization.SoapElementAttribute(DataType = "integer")]
         public string severity
@@ -4220,7 +4220,7 @@ namespace mantis_tests.Mantis
                 this.RaisePropertyChanged("severity");
             }
         }
-
+        
         /// <remarks/>
         [System.Xml.Serialization.SoapElementAttribute(DataType = "integer")]
         public string status
@@ -4235,7 +4235,7 @@ namespace mantis_tests.Mantis
                 this.RaisePropertyChanged("status");
             }
         }
-
+        
         /// <remarks/>
         [System.Xml.Serialization.SoapElementAttribute(DataType = "integer")]
         public string reporter
@@ -4264,7 +4264,7 @@ namespace mantis_tests.Mantis
                 this.RaisePropertyChanged("summary");
             }
         }
-
+        
         /// <remarks/>
         [System.Xml.Serialization.SoapElementAttribute(DataType = "integer")]
         public string handler
@@ -4279,7 +4279,7 @@ namespace mantis_tests.Mantis
                 this.RaisePropertyChanged("handler");
             }
         }
-
+        
         /// <remarks/>
         [System.Xml.Serialization.SoapElementAttribute(DataType = "integer")]
         public string resolution
@@ -4294,7 +4294,7 @@ namespace mantis_tests.Mantis
                 this.RaisePropertyChanged("resolution");
             }
         }
-
+        
         /// <remarks/>
         [System.Xml.Serialization.SoapElementAttribute(DataType = "integer")]
         public string attachments_count
@@ -4309,7 +4309,7 @@ namespace mantis_tests.Mantis
                 this.RaisePropertyChanged("attachments_count");
             }
         }
-
+        
         /// <remarks/>
         [System.Xml.Serialization.SoapElementAttribute(DataType = "integer")]
         public string notes_count
@@ -4333,10 +4333,10 @@ namespace mantis_tests.Mantis
             if ((propertyChanged != null))
             {
                 propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
-            }
+    }
         }
     }
-
+    
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.4161.0")]
     [System.SerializableAttribute()]
@@ -4345,9 +4345,9 @@ namespace mantis_tests.Mantis
     [System.Xml.Serialization.SoapTypeAttribute(Namespace = "http://futureware.biz/mantisconnect")]
     public partial class CustomFieldValueForIssueData : object, System.ComponentModel.INotifyPropertyChanged
     {
-
+        
         private ObjectRef fieldField;
-
+        
         private string valueField;
 
         /// <remarks/>
@@ -4386,10 +4386,10 @@ namespace mantis_tests.Mantis
             if ((propertyChanged != null))
             {
                 propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
-            }
+    }
         }
     }
-
+    
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.4161.0")]
     [System.SerializableAttribute()]
@@ -4398,29 +4398,29 @@ namespace mantis_tests.Mantis
     [System.Xml.Serialization.SoapTypeAttribute(Namespace = "http://futureware.biz/mantisconnect")]
     public partial class IssueNoteData : object, System.ComponentModel.INotifyPropertyChanged
     {
-
+        
         private string idField;
-
+        
         private AccountData reporterField;
-
+        
         private string textField;
-
+        
         private ObjectRef view_stateField;
-
+        
         private System.DateTime date_submittedField;
-
+        
         private bool date_submittedFieldSpecified;
-
+        
         private System.DateTime last_modifiedField;
-
+        
         private bool last_modifiedFieldSpecified;
-
+        
         private string time_trackingField;
-
+        
         private string note_typeField;
-
+        
         private string note_attrField;
-
+        
         /// <remarks/>
         [System.Xml.Serialization.SoapElementAttribute(DataType = "integer")]
         public string id
@@ -4535,7 +4535,7 @@ namespace mantis_tests.Mantis
                 this.RaisePropertyChanged("last_modifiedSpecified");
             }
         }
-
+        
         /// <remarks/>
         [System.Xml.Serialization.SoapElementAttribute(DataType = "integer")]
         public string time_tracking
@@ -4550,7 +4550,7 @@ namespace mantis_tests.Mantis
                 this.RaisePropertyChanged("time_tracking");
             }
         }
-
+        
         /// <remarks/>
         [System.Xml.Serialization.SoapElementAttribute(DataType = "integer")]
         public string note_type
@@ -4588,10 +4588,10 @@ namespace mantis_tests.Mantis
             if ((propertyChanged != null))
             {
                 propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
-            }
+    }
         }
     }
-
+    
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.4161.0")]
     [System.SerializableAttribute()]
@@ -4600,13 +4600,13 @@ namespace mantis_tests.Mantis
     [System.Xml.Serialization.SoapTypeAttribute(Namespace = "http://futureware.biz/mantisconnect")]
     public partial class RelationshipData : object, System.ComponentModel.INotifyPropertyChanged
     {
-
+        
         private string idField;
-
+        
         private ObjectRef typeField;
-
+        
         private string target_idField;
-
+        
         /// <remarks/>
         [System.Xml.Serialization.SoapElementAttribute(DataType = "integer")]
         public string id
@@ -4635,7 +4635,7 @@ namespace mantis_tests.Mantis
                 this.RaisePropertyChanged("type");
             }
         }
-
+        
         /// <remarks/>
         [System.Xml.Serialization.SoapElementAttribute(DataType = "integer")]
         public string target_id
@@ -4659,10 +4659,10 @@ namespace mantis_tests.Mantis
             if ((propertyChanged != null))
             {
                 propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
-            }
+    }
         }
     }
-
+    
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.4161.0")]
     [System.SerializableAttribute()]
@@ -4671,23 +4671,23 @@ namespace mantis_tests.Mantis
     [System.Xml.Serialization.SoapTypeAttribute(Namespace = "http://futureware.biz/mantisconnect")]
     public partial class AttachmentData : object, System.ComponentModel.INotifyPropertyChanged
     {
-
+        
         private string idField;
-
+        
         private string filenameField;
-
+        
         private string sizeField;
-
+        
         private string content_typeField;
-
+        
         private System.DateTime date_submittedField;
-
+        
         private bool date_submittedFieldSpecified;
-
+        
         private string download_urlField;
-
+        
         private string user_idField;
-
+        
         /// <remarks/>
         [System.Xml.Serialization.SoapElementAttribute(DataType = "integer")]
         public string id
@@ -4716,7 +4716,7 @@ namespace mantis_tests.Mantis
                 this.RaisePropertyChanged("filename");
             }
         }
-
+        
         /// <remarks/>
         [System.Xml.Serialization.SoapElementAttribute(DataType = "integer")]
         public string size
@@ -4774,7 +4774,7 @@ namespace mantis_tests.Mantis
                 this.RaisePropertyChanged("date_submittedSpecified");
             }
         }
-
+        
         /// <remarks/>
         [System.Xml.Serialization.SoapElementAttribute(DataType = "anyURI")]
         public string download_url
@@ -4789,7 +4789,7 @@ namespace mantis_tests.Mantis
                 this.RaisePropertyChanged("download_url");
             }
         }
-
+        
         /// <remarks/>
         [System.Xml.Serialization.SoapElementAttribute(DataType = "integer")]
         public string user_id
@@ -4813,10 +4813,10 @@ namespace mantis_tests.Mantis
             if ((propertyChanged != null))
             {
                 propertyChanged(this, new System.ComponentModel.PropertyChangedEventArgs(propertyName));
-            }
+    }
         }
     }
-
+    
     /// <remarks/>
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.Xml", "4.8.4161.0")]
     [System.SerializableAttribute()]
@@ -4825,85 +4825,85 @@ namespace mantis_tests.Mantis
     [System.Xml.Serialization.SoapTypeAttribute(Namespace = "http://futureware.biz/mantisconnect")]
     public partial class IssueData : object, System.ComponentModel.INotifyPropertyChanged
     {
-
+        
         private string idField;
-
+        
         private ObjectRef view_stateField;
-
+        
         private System.DateTime last_updatedField;
-
+        
         private bool last_updatedFieldSpecified;
-
+        
         private ObjectRef projectField;
-
+        
         private string categoryField;
-
+        
         private ObjectRef priorityField;
-
+        
         private ObjectRef severityField;
-
+        
         private ObjectRef statusField;
-
+        
         private AccountData reporterField;
-
+        
         private string summaryField;
-
+        
         private string versionField;
-
+        
         private string buildField;
-
+        
         private string platformField;
-
+        
         private string osField;
-
+        
         private string os_buildField;
-
+        
         private ObjectRef reproducibilityField;
-
+        
         private System.DateTime date_submittedField;
-
+        
         private bool date_submittedFieldSpecified;
-
+        
         private string sponsorship_totalField;
-
+        
         private AccountData handlerField;
-
+        
         private ObjectRef projectionField;
-
+        
         private ObjectRef etaField;
-
+        
         private ObjectRef resolutionField;
-
+        
         private string fixed_in_versionField;
-
+        
         private string target_versionField;
-
+        
         private string descriptionField;
-
+        
         private string steps_to_reproduceField;
-
+        
         private string additional_informationField;
-
+        
         private AttachmentData[] attachmentsField;
-
+        
         private RelationshipData[] relationshipsField;
-
+        
         private IssueNoteData[] notesField;
-
+        
         private CustomFieldValueForIssueData[] custom_fieldsField;
-
+        
         private System.DateTime due_dateField;
-
+        
         private bool due_dateFieldSpecified;
-
+        
         private AccountData[] monitorsField;
-
+        
         private bool stickyField;
-
+        
         private bool stickyFieldSpecified;
-
+        
         private ObjectRef[] tagsField;
-
+        
         /// <remarks/>
         [System.Xml.Serialization.SoapElementAttribute(DataType = "integer")]
         public string id
@@ -5172,7 +5172,7 @@ namespace mantis_tests.Mantis
                 this.RaisePropertyChanged("date_submittedSpecified");
             }
         }
-
+        
         /// <remarks/>
         [System.Xml.Serialization.SoapElementAttribute(DataType = "integer")]
         public string sponsorship_total
@@ -5467,7 +5467,7 @@ namespace mantis_tests.Mantis
             }
         }
     }
-
+    
     [System.CodeDom.Compiler.GeneratedCodeAttribute("System.ServiceModel", "4.0.0.0")]
     public interface MantisConnectPortTypeChannel : mantis_tests.Mantis.MantisConnectPortType, System.ServiceModel.IClientChannel
     {
@@ -5521,7 +5521,7 @@ namespace mantis_tests.Mantis
         {
             return base.Channel.mc_loginAsync(username, password);
         }
-
+        
         public mantis_tests.Mantis.ObjectRef[] mc_enum_status(string username, string password)
         {
             return base.Channel.mc_enum_status(username, password);
@@ -5531,7 +5531,7 @@ namespace mantis_tests.Mantis
         {
             return base.Channel.mc_enum_statusAsync(username, password);
         }
-
+        
         public mantis_tests.Mantis.ObjectRef[] mc_enum_priorities(string username, string password)
         {
             return base.Channel.mc_enum_priorities(username, password);
@@ -5541,7 +5541,7 @@ namespace mantis_tests.Mantis
         {
             return base.Channel.mc_enum_prioritiesAsync(username, password);
         }
-
+        
         public mantis_tests.Mantis.ObjectRef[] mc_enum_severities(string username, string password)
         {
             return base.Channel.mc_enum_severities(username, password);
@@ -5551,7 +5551,7 @@ namespace mantis_tests.Mantis
         {
             return base.Channel.mc_enum_severitiesAsync(username, password);
         }
-
+        
         public mantis_tests.Mantis.ObjectRef[] mc_enum_reproducibilities(string username, string password)
         {
             return base.Channel.mc_enum_reproducibilities(username, password);
@@ -5561,7 +5561,7 @@ namespace mantis_tests.Mantis
         {
             return base.Channel.mc_enum_reproducibilitiesAsync(username, password);
         }
-
+        
         public mantis_tests.Mantis.ObjectRef[] mc_enum_projections(string username, string password)
         {
             return base.Channel.mc_enum_projections(username, password);
@@ -5571,7 +5571,7 @@ namespace mantis_tests.Mantis
         {
             return base.Channel.mc_enum_projectionsAsync(username, password);
         }
-
+        
         public mantis_tests.Mantis.ObjectRef[] mc_enum_etas(string username, string password)
         {
             return base.Channel.mc_enum_etas(username, password);
@@ -5581,7 +5581,7 @@ namespace mantis_tests.Mantis
         {
             return base.Channel.mc_enum_etasAsync(username, password);
         }
-
+        
         public mantis_tests.Mantis.ObjectRef[] mc_enum_resolutions(string username, string password)
         {
             return base.Channel.mc_enum_resolutions(username, password);
@@ -5591,7 +5591,7 @@ namespace mantis_tests.Mantis
         {
             return base.Channel.mc_enum_resolutionsAsync(username, password);
         }
-
+        
         public mantis_tests.Mantis.ObjectRef[] mc_enum_access_levels(string username, string password)
         {
             return base.Channel.mc_enum_access_levels(username, password);
@@ -5601,7 +5601,7 @@ namespace mantis_tests.Mantis
         {
             return base.Channel.mc_enum_access_levelsAsync(username, password);
         }
-
+        
         public mantis_tests.Mantis.ObjectRef[] mc_enum_project_status(string username, string password)
         {
             return base.Channel.mc_enum_project_status(username, password);
@@ -5611,7 +5611,7 @@ namespace mantis_tests.Mantis
         {
             return base.Channel.mc_enum_project_statusAsync(username, password);
         }
-
+        
         public mantis_tests.Mantis.ObjectRef[] mc_enum_project_view_states(string username, string password)
         {
             return base.Channel.mc_enum_project_view_states(username, password);
@@ -5621,7 +5621,7 @@ namespace mantis_tests.Mantis
         {
             return base.Channel.mc_enum_project_view_statesAsync(username, password);
         }
-
+        
         public mantis_tests.Mantis.ObjectRef[] mc_enum_view_states(string username, string password)
         {
             return base.Channel.mc_enum_view_states(username, password);
@@ -5631,7 +5631,7 @@ namespace mantis_tests.Mantis
         {
             return base.Channel.mc_enum_view_statesAsync(username, password);
         }
-
+        
         public mantis_tests.Mantis.ObjectRef[] mc_enum_custom_field_types(string username, string password)
         {
             return base.Channel.mc_enum_custom_field_types(username, password);
@@ -5641,7 +5641,7 @@ namespace mantis_tests.Mantis
         {
             return base.Channel.mc_enum_custom_field_typesAsync(username, password);
         }
-
+        
         public string mc_enum_get(string username, string password, string enumeration)
         {
             return base.Channel.mc_enum_get(username, password, enumeration);
@@ -5671,7 +5671,7 @@ namespace mantis_tests.Mantis
         {
             return base.Channel.mc_issue_getAsync(username, password, issue_id);
         }
-
+        
         public mantis_tests.Mantis.IssueData[] mc_issues_get(string username, string password, string[] issue_ids)
         {
             return base.Channel.mc_issues_get(username, password, issue_ids);
@@ -5681,7 +5681,7 @@ namespace mantis_tests.Mantis
         {
             return base.Channel.mc_issues_getAsync(username, password, issue_ids);
         }
-
+        
         public mantis_tests.Mantis.IssueHeaderData[] mc_issues_get_header(string username, string password, string[] issue_ids)
         {
             return base.Channel.mc_issues_get_header(username, password, issue_ids);
@@ -5691,7 +5691,7 @@ namespace mantis_tests.Mantis
         {
             return base.Channel.mc_issues_get_headerAsync(username, password, issue_ids);
         }
-
+        
         public mantis_tests.Mantis.HistoryData[] mc_issue_get_history(string username, string password, string issue_id)
         {
             return base.Channel.mc_issue_get_history(username, password, issue_id);
@@ -5701,7 +5701,7 @@ namespace mantis_tests.Mantis
         {
             return base.Channel.mc_issue_get_historyAsync(username, password, issue_id);
         }
-
+        
         public string mc_issue_get_biggest_id(string username, string password, string project_id)
         {
             return base.Channel.mc_issue_get_biggest_id(username, password, project_id);
@@ -5731,7 +5731,7 @@ namespace mantis_tests.Mantis
         {
             return base.Channel.mc_issue_addAsync(username, password, issue);
         }
-
+        
         public bool mc_issue_update(string username, string password, string issueId, mantis_tests.Mantis.IssueData issue)
         {
             return base.Channel.mc_issue_update(username, password, issueId, issue);
@@ -5741,7 +5741,7 @@ namespace mantis_tests.Mantis
         {
             return base.Channel.mc_issue_updateAsync(username, password, issueId, issue);
         }
-
+        
         public bool mc_issue_set_tags(string username, string password, string issue_id, mantis_tests.Mantis.TagData[] tags)
         {
             return base.Channel.mc_issue_set_tags(username, password, issue_id, tags);
@@ -5751,7 +5751,7 @@ namespace mantis_tests.Mantis
         {
             return base.Channel.mc_issue_set_tagsAsync(username, password, issue_id, tags);
         }
-
+        
         public bool mc_issue_delete(string username, string password, string issue_id)
         {
             return base.Channel.mc_issue_delete(username, password, issue_id);
@@ -5771,7 +5771,7 @@ namespace mantis_tests.Mantis
         {
             return base.Channel.mc_issue_note_addAsync(username, password, issue_id, note);
         }
-
+        
         public bool mc_issue_note_delete(string username, string password, string issue_note_id)
         {
             return base.Channel.mc_issue_note_delete(username, password, issue_note_id);
@@ -5791,7 +5791,7 @@ namespace mantis_tests.Mantis
         {
             return base.Channel.mc_issue_note_updateAsync(username, password, note);
         }
-
+        
         public string mc_issue_relationship_add(string username, string password, string issue_id, mantis_tests.Mantis.RelationshipData relationship)
         {
             return base.Channel.mc_issue_relationship_add(username, password, issue_id, relationship);
@@ -5801,7 +5801,7 @@ namespace mantis_tests.Mantis
         {
             return base.Channel.mc_issue_relationship_addAsync(username, password, issue_id, relationship);
         }
-
+        
         public bool mc_issue_relationship_delete(string username, string password, string issue_id, string relationship_id)
         {
             return base.Channel.mc_issue_relationship_delete(username, password, issue_id, relationship_id);
@@ -5851,7 +5851,7 @@ namespace mantis_tests.Mantis
         {
             return base.Channel.mc_project_addAsync(username, password, project);
         }
-
+        
         public bool mc_project_delete(string username, string password, string project_id)
         {
             return base.Channel.mc_project_delete(username, password, project_id);
@@ -5871,7 +5871,7 @@ namespace mantis_tests.Mantis
         {
             return base.Channel.mc_project_updateAsync(username, password, project_id, project);
         }
-
+        
         public string mc_project_get_id_from_name(string username, string password, string project_name)
         {
             return base.Channel.mc_project_get_id_from_name(username, password, project_name);
@@ -5891,7 +5891,7 @@ namespace mantis_tests.Mantis
         {
             return base.Channel.mc_project_get_issues_for_userAsync(username, password, project_id, filter_type, target_user, page_number, per_page);
         }
-
+        
         public mantis_tests.Mantis.IssueData[] mc_project_get_issues(string username, string password, string project_id, string page_number, string per_page)
         {
             return base.Channel.mc_project_get_issues(username, password, project_id, page_number, per_page);
@@ -5901,7 +5901,7 @@ namespace mantis_tests.Mantis
         {
             return base.Channel.mc_project_get_issuesAsync(username, password, project_id, page_number, per_page);
         }
-
+        
         public mantis_tests.Mantis.IssueHeaderData[] mc_project_get_issue_headers(string username, string password, string project_id, string page_number, string per_page)
         {
             return base.Channel.mc_project_get_issue_headers(username, password, project_id, page_number, per_page);
@@ -5911,7 +5911,7 @@ namespace mantis_tests.Mantis
         {
             return base.Channel.mc_project_get_issue_headersAsync(username, password, project_id, page_number, per_page);
         }
-
+        
         public mantis_tests.Mantis.AccountData[] mc_project_get_users(string username, string password, string project_id, string access)
         {
             return base.Channel.mc_project_get_users(username, password, project_id, access);
@@ -5921,7 +5921,7 @@ namespace mantis_tests.Mantis
         {
             return base.Channel.mc_project_get_usersAsync(username, password, project_id, access);
         }
-
+        
         public mantis_tests.Mantis.ProjectData[] mc_projects_get_user_accessible(string username, string password)
         {
             return base.Channel.mc_projects_get_user_accessible(username, password);
@@ -5931,7 +5931,7 @@ namespace mantis_tests.Mantis
         {
             return base.Channel.mc_projects_get_user_accessibleAsync(username, password);
         }
-
+        
         public string[] mc_project_get_categories(string username, string password, string project_id)
         {
             return base.Channel.mc_project_get_categories(username, password, project_id);
@@ -5981,7 +5981,7 @@ namespace mantis_tests.Mantis
         {
             return base.Channel.mc_project_get_versionsAsync(username, password, project_id);
         }
-
+        
         public string mc_project_version_add(string username, string password, mantis_tests.Mantis.ProjectVersionData version)
         {
             return base.Channel.mc_project_version_add(username, password, version);
@@ -5991,7 +5991,7 @@ namespace mantis_tests.Mantis
         {
             return base.Channel.mc_project_version_addAsync(username, password, version);
         }
-
+        
         public bool mc_project_version_update(string username, string password, string version_id, mantis_tests.Mantis.ProjectVersionData version)
         {
             return base.Channel.mc_project_version_update(username, password, version_id, version);
@@ -6001,7 +6001,7 @@ namespace mantis_tests.Mantis
         {
             return base.Channel.mc_project_version_updateAsync(username, password, version_id, version);
         }
-
+        
         public bool mc_project_version_delete(string username, string password, string version_id)
         {
             return base.Channel.mc_project_version_delete(username, password, version_id);
@@ -6021,7 +6021,7 @@ namespace mantis_tests.Mantis
         {
             return base.Channel.mc_project_get_released_versionsAsync(username, password, project_id);
         }
-
+        
         public mantis_tests.Mantis.ProjectVersionData[] mc_project_get_unreleased_versions(string username, string password, string project_id)
         {
             return base.Channel.mc_project_get_unreleased_versions(username, password, project_id);
@@ -6031,7 +6031,7 @@ namespace mantis_tests.Mantis
         {
             return base.Channel.mc_project_get_unreleased_versionsAsync(username, password, project_id);
         }
-
+        
         public mantis_tests.Mantis.ProjectAttachmentData[] mc_project_get_attachments(string username, string password, string project_id)
         {
             return base.Channel.mc_project_get_attachments(username, password, project_id);
@@ -6041,7 +6041,7 @@ namespace mantis_tests.Mantis
         {
             return base.Channel.mc_project_get_attachmentsAsync(username, password, project_id);
         }
-
+        
         public mantis_tests.Mantis.CustomFieldDefinitionData[] mc_project_get_custom_fields(string username, string password, string project_id)
         {
             return base.Channel.mc_project_get_custom_fields(username, password, project_id);
@@ -6051,7 +6051,7 @@ namespace mantis_tests.Mantis
         {
             return base.Channel.mc_project_get_custom_fieldsAsync(username, password, project_id);
         }
-
+        
         public byte[] mc_project_attachment_get(string username, string password, string project_attachment_id)
         {
             return base.Channel.mc_project_attachment_get(username, password, project_attachment_id);
@@ -6101,7 +6101,7 @@ namespace mantis_tests.Mantis
         {
             return base.Channel.mc_filter_getAsync(username, password, project_id);
         }
-
+        
         public mantis_tests.Mantis.IssueData[] mc_filter_get_issues(string username, string password, string project_id, string filter_id, string page_number, string per_page)
         {
             return base.Channel.mc_filter_get_issues(username, password, project_id, filter_id, page_number, per_page);
@@ -6111,7 +6111,7 @@ namespace mantis_tests.Mantis
         {
             return base.Channel.mc_filter_get_issuesAsync(username, password, project_id, filter_id, page_number, per_page);
         }
-
+        
         public mantis_tests.Mantis.IssueHeaderData[] mc_filter_get_issue_headers(string username, string password, string project_id, string filter_id, string page_number, string per_page)
         {
             return base.Channel.mc_filter_get_issue_headers(username, password, project_id, filter_id, page_number, per_page);
@@ -6121,7 +6121,7 @@ namespace mantis_tests.Mantis
         {
             return base.Channel.mc_filter_get_issue_headersAsync(username, password, project_id, filter_id, page_number, per_page);
         }
-
+        
         public mantis_tests.Mantis.IssueHeaderData[] mc_filter_search_issue_headers(string username, string password, mantis_tests.Mantis.FilterSearchData filter, string page_number, string per_page)
         {
             return base.Channel.mc_filter_search_issue_headers(username, password, filter, page_number, per_page);
@@ -6131,7 +6131,7 @@ namespace mantis_tests.Mantis
         {
             return base.Channel.mc_filter_search_issue_headersAsync(username, password, filter, page_number, per_page);
         }
-
+        
         public mantis_tests.Mantis.IssueData[] mc_filter_search_issues(string username, string password, mantis_tests.Mantis.FilterSearchData filter, string page_number, string per_page)
         {
             return base.Channel.mc_filter_search_issues(username, password, filter, page_number, per_page);
@@ -6141,7 +6141,7 @@ namespace mantis_tests.Mantis
         {
             return base.Channel.mc_filter_search_issuesAsync(username, password, filter, page_number, per_page);
         }
-
+        
         public string[] mc_filter_search_issue_ids(string username, string password, mantis_tests.Mantis.FilterSearchData filter, string page_number, string per_page)
         {
             return base.Channel.mc_filter_search_issue_ids(username, password, filter, page_number, per_page);
@@ -6151,7 +6151,7 @@ namespace mantis_tests.Mantis
         {
             return base.Channel.mc_filter_search_issue_idsAsync(username, password, filter, page_number, per_page);
         }
-
+        
         public string mc_config_get_string(string username, string password, string config_var)
         {
             return base.Channel.mc_config_get_string(username, password, config_var);
@@ -6186,32 +6186,32 @@ namespace mantis_tests.Mantis
         {
             return base.Channel.mc_user_profiles_get_all(username, password, page_number, per_page);
         }
-
+        
         public System.Threading.Tasks.Task<mantis_tests.Mantis.ProfileDataSearchResult> mc_user_profiles_get_allAsync(string username, string password, string page_number, string per_page)
         {
             return base.Channel.mc_user_profiles_get_allAsync(username, password, page_number, per_page);
         }
-
+        
         public mantis_tests.Mantis.TagDataSearchResult mc_tag_get_all(string username, string password, string page_number, string per_page)
         {
             return base.Channel.mc_tag_get_all(username, password, page_number, per_page);
         }
-
+        
         public System.Threading.Tasks.Task<mantis_tests.Mantis.TagDataSearchResult> mc_tag_get_allAsync(string username, string password, string page_number, string per_page)
-        {
+            {
             return base.Channel.mc_tag_get_allAsync(username, password, page_number, per_page);
         }
-
+        
         public string mc_tag_add(string username, string password, mantis_tests.Mantis.TagData tag)
-        {
+            {
             return base.Channel.mc_tag_add(username, password, tag);
         }
-
+        
         public System.Threading.Tasks.Task<string> mc_tag_addAsync(string username, string password, mantis_tests.Mantis.TagData tag)
         {
             return base.Channel.mc_tag_addAsync(username, password, tag);
         }
-
+        
         public bool mc_tag_delete(string username, string password, string tag_id)
         {
             return base.Channel.mc_tag_delete(username, password, tag_id);
