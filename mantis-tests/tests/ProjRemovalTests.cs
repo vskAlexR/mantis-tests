@@ -27,5 +27,39 @@ namespace mantis_tests
 
             Assert.AreEqual(projects, newProjects);
         }
+        [Test]
+        public void ProjectsRemovalApi()
+        {
+            AccountData account = new AccountData()
+            {
+                Name = "administrator",
+                Password = "root"
+
+            };
+            MantisData project = new MantisData()
+            {
+                Name = "12311"
+            };
+
+            List<MantisData> oldProjects = app.Api.GetProjects(account); ;
+            MantisData toBeRemoved = oldProjects[0];
+
+            app.Api.IsProjectExist(oldProjects, account, project);
+
+            app.Projects.RemoveProject(toBeRemoved);
+
+            Assert.AreEqual(oldProjects.Count - 1, app.Projects.GetProjectsCount());
+
+            List<MantisData> newProjects = app.Api.GetProjects(account);
+
+            oldProjects.RemoveAt(0);
+
+            Assert.AreEqual(oldProjects, newProjects);
+
+            foreach (MantisData newProject in newProjects)
+            {
+                Assert.AreNotEqual(newProject.Id, toBeRemoved.Id);
+            }
+        }
     }
 }

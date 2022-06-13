@@ -31,5 +31,31 @@ namespace mantis_tests
 
             Assert.AreEqual(projects, newProjects);
         }
+        [Test]
+        public void CreateNewProjectAPI()
+        {
+            AccountData account = new AccountData()
+            {
+                Name = "administrator",
+                Password = "root"
+                
+            };
+            MantisData project = new MantisData()
+            {
+                Name = "12344"
+            };
+
+            List<MantisData> oldProjects = app.Api.GetProjects(account);
+
+            app.Api.CreateNewProject(account, project);
+
+            Assert.AreEqual(oldProjects.Count + 1, app.Projects.GetProjectsCount());
+
+            List<MantisData> newProjects = app.Api.GetProjects(account);
+            oldProjects.Add(project);
+            oldProjects.Sort();
+            newProjects.Sort();
+            Assert.AreEqual(oldProjects, newProjects);
+        }
     }
 }

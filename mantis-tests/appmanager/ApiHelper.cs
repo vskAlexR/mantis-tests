@@ -26,5 +26,39 @@ namespace mantis_tests
             issue.project.id = project.Id;
             client.mc_issue_addAsync(account.Name, account.Password, issue);
         }
+        public List<MantisData> GetProjects(AccountData account)
+        {
+            Mantis.MantisConnectPortTypeClient client = new Mantis.MantisConnectPortTypeClient();
+            Mantis.ProjectData[] mantisProjects = client.mc_projects_get_user_accessible(account.Name, account.Password);
+
+            List<MantisData> projects = new List<MantisData>();
+            foreach (Mantis.ProjectData mantisProject in mantisProjects)
+            {
+                projects.Add(new MantisData() { Name = mantisProject.name, Id = mantisProject.id });
+            }
+            return projects;
+        }
+
+        public void CreateNewProject(AccountData account, MantisData project)
+        {
+            Mantis.MantisConnectPortTypeClient client = new Mantis.MantisConnectPortTypeClient();
+            Mantis.ProjectData projectData = new Mantis.ProjectData();
+            projectData.name = project.Name;
+            client.mc_project_addAsync(account.Name, account.Password, projectData);
+        }
+
+        public void DeleteProject(AccountData account, MantisData project)
+        {
+            Mantis.MantisConnectPortTypeClient client = new Mantis.MantisConnectPortTypeClient();
+            client.mc_project_deleteAsync(account.Name, account.Password, project.Id);
+        }
+
+        public void IsProjectExist(List<MantisData> oldProjects, AccountData account, MantisData project)
+        {
+            if (oldProjects.Count() == 0)
+            {
+                CreateNewProject(account, project);
+            }
+        }
     }
 }
