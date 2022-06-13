@@ -22,6 +22,9 @@ namespace mantis_tests
         public LoginHelper Auth { get; set; }
         public ManagementMenuHelper Navigation { get; set; }
         public ProjectManagementHelper Projects { get; set; }
+        public AdminHelper Admin { get; set; }
+        public ApiHelper Api { get; set; }
+
 
 
 
@@ -38,6 +41,9 @@ namespace mantis_tests
             Auth = new LoginHelper(this);
             Projects = new ProjectManagementHelper(this);
             Navigation = new ManagementMenuHelper(this);
+            Admin = new AdminHelper(this, baseURL);
+            Api = new ApiHelper(this);
+
 
 
         }
