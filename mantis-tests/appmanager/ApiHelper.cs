@@ -24,7 +24,7 @@ namespace mantis_tests
             issue.category = issueData.Category;
             issue.project = new Mantis.ObjectRef();
             issue.project.id = project.Id;
-            client.mc_issue_add(account.Name, account.Password, issue);
+            client.mc_issue_addAsync(account.Name, account.Password, issue);
         }
     }
 }
