@@ -1084,7 +1084,7 @@ namespace Mantis
         private string access_levelField;
         
         private string timezoneField;
-        
+
         /// <remarks/>
         public AccountData account_data
         {
@@ -1113,7 +1113,7 @@ namespace Mantis
                 this.RaisePropertyChanged("access_level");
             }
         }
-        
+
         /// <remarks/>
         public string timezone
         {
@@ -1169,7 +1169,7 @@ namespace Mantis
                 this.RaisePropertyChanged("id");
             }
         }
-        
+
         /// <remarks/>
         public string name
         {
@@ -1183,7 +1183,7 @@ namespace Mantis
                 this.RaisePropertyChanged("name");
             }
         }
-        
+
         /// <remarks/>
         public string real_name
         {
@@ -1197,7 +1197,7 @@ namespace Mantis
                 this.RaisePropertyChanged("real_name");
             }
         }
-        
+
         /// <remarks/>
         public string email
         {
@@ -1234,7 +1234,7 @@ namespace Mantis
         private TagData[] resultsField;
         
         private string total_resultsField;
-        
+
         /// <remarks/>
         public TagData[] results
         {
@@ -1313,7 +1313,7 @@ namespace Mantis
                 this.RaisePropertyChanged("id");
             }
         }
-        
+
         /// <remarks/>
         public AccountData user_id
         {
@@ -1327,7 +1327,7 @@ namespace Mantis
                 this.RaisePropertyChanged("user_id");
             }
         }
-        
+
         /// <remarks/>
         public string name
         {
@@ -1341,7 +1341,7 @@ namespace Mantis
                 this.RaisePropertyChanged("name");
             }
         }
-        
+
         /// <remarks/>
         public string description
         {
@@ -1355,7 +1355,7 @@ namespace Mantis
                 this.RaisePropertyChanged("description");
             }
         }
-        
+
         /// <remarks/>
         public System.DateTime date_created
         {
@@ -1369,7 +1369,7 @@ namespace Mantis
                 this.RaisePropertyChanged("date_created");
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.SoapIgnoreAttribute()]
         public bool date_createdSpecified
@@ -1384,7 +1384,7 @@ namespace Mantis
                 this.RaisePropertyChanged("date_createdSpecified");
             }
         }
-        
+
         /// <remarks/>
         public System.DateTime date_updated
         {
@@ -1398,7 +1398,7 @@ namespace Mantis
                 this.RaisePropertyChanged("date_updated");
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.SoapIgnoreAttribute()]
         public bool date_updatedSpecified
@@ -1459,7 +1459,7 @@ namespace Mantis
                 this.RaisePropertyChanged("id");
             }
         }
-        
+
         /// <remarks/>
         public AccountData user_id
         {
@@ -1473,7 +1473,7 @@ namespace Mantis
                 this.RaisePropertyChanged("user_id");
             }
         }
-        
+
         /// <remarks/>
         public string platform
         {
@@ -1487,7 +1487,7 @@ namespace Mantis
                 this.RaisePropertyChanged("platform");
             }
         }
-        
+
         /// <remarks/>
         public string os
         {
@@ -1501,7 +1501,7 @@ namespace Mantis
                 this.RaisePropertyChanged("os");
             }
         }
-        
+
         /// <remarks/>
         public string os_build
         {
@@ -1515,7 +1515,7 @@ namespace Mantis
                 this.RaisePropertyChanged("os_build");
             }
         }
-        
+
         /// <remarks/>
         public string description
         {
@@ -1552,7 +1552,7 @@ namespace Mantis
         private ProfileData[] resultsField;
         
         private string total_resultsField;
-        
+
         /// <remarks/>
         public ProfileData[] results
         {
@@ -1604,7 +1604,7 @@ namespace Mantis
         private ObjectRef fieldField;
         
         private string[] valueField;
-        
+
         /// <remarks/>
         public ObjectRef field
         {
@@ -1618,7 +1618,7 @@ namespace Mantis
                 this.RaisePropertyChanged("field");
             }
         }
-        
+
         /// <remarks/>
         public string[] value
         {
@@ -1670,7 +1670,7 @@ namespace Mantis
                 this.RaisePropertyChanged("id");
             }
         }
-        
+
         /// <remarks/>
         public string name
         {
@@ -1779,7 +1779,7 @@ namespace Mantis
         private string[] tag_selectField;
         
         private FilterCustomField[] custom_fieldsField;
-        
+
         /// <remarks/>
         public string[] project_id
         {
@@ -1793,7 +1793,7 @@ namespace Mantis
                 this.RaisePropertyChanged("project_id");
             }
         }
-        
+
         /// <remarks/>
         public string search
         {
@@ -1807,7 +1807,7 @@ namespace Mantis
                 this.RaisePropertyChanged("search");
             }
         }
-        
+
         /// <remarks/>
         public string[] category
         {
@@ -1821,7 +1821,7 @@ namespace Mantis
                 this.RaisePropertyChanged("category");
             }
         }
-        
+
         /// <remarks/>
         public string[] severity_id
         {
@@ -1835,7 +1835,7 @@ namespace Mantis
                 this.RaisePropertyChanged("severity_id");
             }
         }
-        
+
         /// <remarks/>
         public string[] status_id
         {
@@ -1849,7 +1849,7 @@ namespace Mantis
                 this.RaisePropertyChanged("status_id");
             }
         }
-        
+
         /// <remarks/>
         public string[] priority_id
         {
@@ -1863,7 +1863,7 @@ namespace Mantis
                 this.RaisePropertyChanged("priority_id");
             }
         }
-        
+
         /// <remarks/>
         public string[] reporter_id
         {
@@ -1877,7 +1877,7 @@ namespace Mantis
                 this.RaisePropertyChanged("reporter_id");
             }
         }
-        
+
         /// <remarks/>
         public string[] handler_id
         {
@@ -1891,7 +1891,7 @@ namespace Mantis
                 this.RaisePropertyChanged("handler_id");
             }
         }
-        
+
         /// <remarks/>
         public string[] note_user_id
         {
@@ -1905,7 +1905,7 @@ namespace Mantis
                 this.RaisePropertyChanged("note_user_id");
             }
         }
-        
+
         /// <remarks/>
         public string[] resolution_id
         {
@@ -1919,7 +1919,7 @@ namespace Mantis
                 this.RaisePropertyChanged("resolution_id");
             }
         }
-        
+
         /// <remarks/>
         public string[] product_version
         {
@@ -1933,7 +1933,7 @@ namespace Mantis
                 this.RaisePropertyChanged("product_version");
             }
         }
-        
+
         /// <remarks/>
         public string[] user_monitor_id
         {
@@ -1947,7 +1947,7 @@ namespace Mantis
                 this.RaisePropertyChanged("user_monitor_id");
             }
         }
-        
+
         /// <remarks/>
         public string[] hide_status_id
         {
@@ -1961,7 +1961,7 @@ namespace Mantis
                 this.RaisePropertyChanged("hide_status_id");
             }
         }
-        
+
         /// <remarks/>
         public string sort
         {
@@ -1975,7 +1975,7 @@ namespace Mantis
                 this.RaisePropertyChanged("sort");
             }
         }
-        
+
         /// <remarks/>
         public string sort_direction
         {
@@ -1989,7 +1989,7 @@ namespace Mantis
                 this.RaisePropertyChanged("sort_direction");
             }
         }
-        
+
         /// <remarks/>
         public bool sticky
         {
@@ -2003,7 +2003,7 @@ namespace Mantis
                 this.RaisePropertyChanged("sticky");
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.SoapIgnoreAttribute()]
         public bool stickySpecified
@@ -2018,7 +2018,7 @@ namespace Mantis
                 this.RaisePropertyChanged("stickySpecified");
             }
         }
-        
+
         /// <remarks/>
         public string[] view_state_id
         {
@@ -2032,7 +2032,7 @@ namespace Mantis
                 this.RaisePropertyChanged("view_state_id");
             }
         }
-        
+
         /// <remarks/>
         public string[] fixed_in_version
         {
@@ -2046,7 +2046,7 @@ namespace Mantis
                 this.RaisePropertyChanged("fixed_in_version");
             }
         }
-        
+
         /// <remarks/>
         public string[] target_version
         {
@@ -2060,7 +2060,7 @@ namespace Mantis
                 this.RaisePropertyChanged("target_version");
             }
         }
-        
+
         /// <remarks/>
         public string[] platform
         {
@@ -2074,7 +2074,7 @@ namespace Mantis
                 this.RaisePropertyChanged("platform");
             }
         }
-        
+
         /// <remarks/>
         public string[] os
         {
@@ -2088,7 +2088,7 @@ namespace Mantis
                 this.RaisePropertyChanged("os");
             }
         }
-        
+
         /// <remarks/>
         public string[] os_build
         {
@@ -2282,7 +2282,7 @@ namespace Mantis
                 this.RaisePropertyChanged("last_update_end_year");
             }
         }
-        
+
         /// <remarks/>
         public string[] tag_string
         {
@@ -2296,7 +2296,7 @@ namespace Mantis
                 this.RaisePropertyChanged("tag_string");
             }
         }
-        
+
         /// <remarks/>
         public string[] tag_select
         {
@@ -2310,7 +2310,7 @@ namespace Mantis
                 this.RaisePropertyChanged("tag_select");
             }
         }
-        
+
         /// <remarks/>
         public FilterCustomField[] custom_fields
         {
@@ -2374,7 +2374,7 @@ namespace Mantis
                 this.RaisePropertyChanged("id");
             }
         }
-        
+
         /// <remarks/>
         public AccountData owner
         {
@@ -2403,7 +2403,7 @@ namespace Mantis
                 this.RaisePropertyChanged("project_id");
             }
         }
-        
+
         /// <remarks/>
         public bool is_public
         {
@@ -2417,7 +2417,7 @@ namespace Mantis
                 this.RaisePropertyChanged("is_public");
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.SoapIgnoreAttribute()]
         public bool is_publicSpecified
@@ -2432,7 +2432,7 @@ namespace Mantis
                 this.RaisePropertyChanged("is_publicSpecified");
             }
         }
-        
+
         /// <remarks/>
         public string name
         {
@@ -2446,7 +2446,7 @@ namespace Mantis
                 this.RaisePropertyChanged("name");
             }
         }
-        
+
         /// <remarks/>
         public string filter_string
         {
@@ -2460,7 +2460,7 @@ namespace Mantis
                 this.RaisePropertyChanged("filter_string");
             }
         }
-        
+
         /// <remarks/>
         public string url
         {
@@ -2547,7 +2547,7 @@ namespace Mantis
         private bool require_closedField;
         
         private bool require_closedFieldSpecified;
-        
+
         /// <remarks/>
         public ObjectRef field
         {
@@ -2576,7 +2576,7 @@ namespace Mantis
                 this.RaisePropertyChanged("type");
             }
         }
-        
+
         /// <remarks/>
         public string possible_values
         {
@@ -2590,7 +2590,7 @@ namespace Mantis
                 this.RaisePropertyChanged("possible_values");
             }
         }
-        
+
         /// <remarks/>
         public string default_value
         {
@@ -2604,7 +2604,7 @@ namespace Mantis
                 this.RaisePropertyChanged("default_value");
             }
         }
-        
+
         /// <remarks/>
         public string valid_regexp
         {
@@ -2678,7 +2678,7 @@ namespace Mantis
                 this.RaisePropertyChanged("length_max");
             }
         }
-        
+
         /// <remarks/>
         public bool advanced
         {
@@ -2692,7 +2692,7 @@ namespace Mantis
                 this.RaisePropertyChanged("advanced");
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.SoapIgnoreAttribute()]
         public bool advancedSpecified
@@ -2707,7 +2707,7 @@ namespace Mantis
                 this.RaisePropertyChanged("advancedSpecified");
             }
         }
-        
+
         /// <remarks/>
         public bool display_report
         {
@@ -2721,7 +2721,7 @@ namespace Mantis
                 this.RaisePropertyChanged("display_report");
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.SoapIgnoreAttribute()]
         public bool display_reportSpecified
@@ -2736,7 +2736,7 @@ namespace Mantis
                 this.RaisePropertyChanged("display_reportSpecified");
             }
         }
-        
+
         /// <remarks/>
         public bool display_update
         {
@@ -2750,7 +2750,7 @@ namespace Mantis
                 this.RaisePropertyChanged("display_update");
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.SoapIgnoreAttribute()]
         public bool display_updateSpecified
@@ -2765,7 +2765,7 @@ namespace Mantis
                 this.RaisePropertyChanged("display_updateSpecified");
             }
         }
-        
+
         /// <remarks/>
         public bool display_resolved
         {
@@ -2779,7 +2779,7 @@ namespace Mantis
                 this.RaisePropertyChanged("display_resolved");
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.SoapIgnoreAttribute()]
         public bool display_resolvedSpecified
@@ -2794,7 +2794,7 @@ namespace Mantis
                 this.RaisePropertyChanged("display_resolvedSpecified");
             }
         }
-        
+
         /// <remarks/>
         public bool display_closed
         {
@@ -2808,7 +2808,7 @@ namespace Mantis
                 this.RaisePropertyChanged("display_closed");
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.SoapIgnoreAttribute()]
         public bool display_closedSpecified
@@ -2823,7 +2823,7 @@ namespace Mantis
                 this.RaisePropertyChanged("display_closedSpecified");
             }
         }
-        
+
         /// <remarks/>
         public bool require_report
         {
@@ -2837,7 +2837,7 @@ namespace Mantis
                 this.RaisePropertyChanged("require_report");
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.SoapIgnoreAttribute()]
         public bool require_reportSpecified
@@ -2852,7 +2852,7 @@ namespace Mantis
                 this.RaisePropertyChanged("require_reportSpecified");
             }
         }
-        
+
         /// <remarks/>
         public bool require_update
         {
@@ -2866,7 +2866,7 @@ namespace Mantis
                 this.RaisePropertyChanged("require_update");
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.SoapIgnoreAttribute()]
         public bool require_updateSpecified
@@ -2881,7 +2881,7 @@ namespace Mantis
                 this.RaisePropertyChanged("require_updateSpecified");
             }
         }
-        
+
         /// <remarks/>
         public bool require_resolved
         {
@@ -2895,7 +2895,7 @@ namespace Mantis
                 this.RaisePropertyChanged("require_resolved");
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.SoapIgnoreAttribute()]
         public bool require_resolvedSpecified
@@ -2910,7 +2910,7 @@ namespace Mantis
                 this.RaisePropertyChanged("require_resolvedSpecified");
             }
         }
-        
+
         /// <remarks/>
         public bool require_closed
         {
@@ -2924,7 +2924,7 @@ namespace Mantis
                 this.RaisePropertyChanged("require_closed");
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.SoapIgnoreAttribute()]
         public bool require_closedSpecified
@@ -2993,7 +2993,7 @@ namespace Mantis
                 this.RaisePropertyChanged("id");
             }
         }
-        
+
         /// <remarks/>
         public string filename
         {
@@ -3007,7 +3007,7 @@ namespace Mantis
                 this.RaisePropertyChanged("filename");
             }
         }
-        
+
         /// <remarks/>
         public string title
         {
@@ -3021,7 +3021,7 @@ namespace Mantis
                 this.RaisePropertyChanged("title");
             }
         }
-        
+
         /// <remarks/>
         public string description
         {
@@ -3050,7 +3050,7 @@ namespace Mantis
                 this.RaisePropertyChanged("size");
             }
         }
-        
+
         /// <remarks/>
         public string content_type
         {
@@ -3064,7 +3064,7 @@ namespace Mantis
                 this.RaisePropertyChanged("content_type");
             }
         }
-        
+
         /// <remarks/>
         public System.DateTime date_submitted
         {
@@ -3078,7 +3078,7 @@ namespace Mantis
                 this.RaisePropertyChanged("date_submitted");
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.SoapIgnoreAttribute()]
         public bool date_submittedSpecified
@@ -3177,7 +3177,7 @@ namespace Mantis
                 this.RaisePropertyChanged("id");
             }
         }
-        
+
         /// <remarks/>
         public string name
         {
@@ -3206,7 +3206,7 @@ namespace Mantis
                 this.RaisePropertyChanged("project_id");
             }
         }
-        
+
         /// <remarks/>
         public System.DateTime date_order
         {
@@ -3220,7 +3220,7 @@ namespace Mantis
                 this.RaisePropertyChanged("date_order");
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.SoapIgnoreAttribute()]
         public bool date_orderSpecified
@@ -3235,7 +3235,7 @@ namespace Mantis
                 this.RaisePropertyChanged("date_orderSpecified");
             }
         }
-        
+
         /// <remarks/>
         public string description
         {
@@ -3249,7 +3249,7 @@ namespace Mantis
                 this.RaisePropertyChanged("description");
             }
         }
-        
+
         /// <remarks/>
         public bool released
         {
@@ -3263,7 +3263,7 @@ namespace Mantis
                 this.RaisePropertyChanged("released");
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.SoapIgnoreAttribute()]
         public bool releasedSpecified
@@ -3278,7 +3278,7 @@ namespace Mantis
                 this.RaisePropertyChanged("releasedSpecified");
             }
         }
-        
+
         /// <remarks/>
         public bool obsolete
         {
@@ -3292,7 +3292,7 @@ namespace Mantis
                 this.RaisePropertyChanged("obsolete");
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.SoapIgnoreAttribute()]
         public bool obsoleteSpecified
@@ -3365,7 +3365,7 @@ namespace Mantis
                 this.RaisePropertyChanged("id");
             }
         }
-        
+
         /// <remarks/>
         public string name
         {
@@ -3379,7 +3379,7 @@ namespace Mantis
                 this.RaisePropertyChanged("name");
             }
         }
-        
+
         /// <remarks/>
         public ObjectRef status
         {
@@ -3393,7 +3393,7 @@ namespace Mantis
                 this.RaisePropertyChanged("status");
             }
         }
-        
+
         /// <remarks/>
         public bool enabled
         {
@@ -3407,7 +3407,7 @@ namespace Mantis
                 this.RaisePropertyChanged("enabled");
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.SoapIgnoreAttribute()]
         public bool enabledSpecified
@@ -3422,7 +3422,7 @@ namespace Mantis
                 this.RaisePropertyChanged("enabledSpecified");
             }
         }
-        
+
         /// <remarks/>
         public ObjectRef view_state
         {
@@ -3436,7 +3436,7 @@ namespace Mantis
                 this.RaisePropertyChanged("view_state");
             }
         }
-        
+
         /// <remarks/>
         public ObjectRef access_min
         {
@@ -3450,7 +3450,7 @@ namespace Mantis
                 this.RaisePropertyChanged("access_min");
             }
         }
-        
+
         /// <remarks/>
         public string file_path
         {
@@ -3464,7 +3464,7 @@ namespace Mantis
                 this.RaisePropertyChanged("file_path");
             }
         }
-        
+
         /// <remarks/>
         public string description
         {
@@ -3478,7 +3478,7 @@ namespace Mantis
                 this.RaisePropertyChanged("description");
             }
         }
-        
+
         /// <remarks/>
         public ProjectData[] subprojects
         {
@@ -3492,7 +3492,7 @@ namespace Mantis
                 this.RaisePropertyChanged("subprojects");
             }
         }
-        
+
         /// <remarks/>
         public bool inherit_global
         {
@@ -3506,7 +3506,7 @@ namespace Mantis
                 this.RaisePropertyChanged("inherit_global");
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.SoapIgnoreAttribute()]
         public bool inherit_globalSpecified
@@ -3584,7 +3584,7 @@ namespace Mantis
                 this.RaisePropertyChanged("userid");
             }
         }
-        
+
         /// <remarks/>
         public string username
         {
@@ -3598,7 +3598,7 @@ namespace Mantis
                 this.RaisePropertyChanged("username");
             }
         }
-        
+
         /// <remarks/>
         public string field
         {
@@ -3627,7 +3627,7 @@ namespace Mantis
                 this.RaisePropertyChanged("type");
             }
         }
-        
+
         /// <remarks/>
         public string old_value
         {
@@ -3641,7 +3641,7 @@ namespace Mantis
                 this.RaisePropertyChanged("old_value");
             }
         }
-        
+
         /// <remarks/>
         public string new_value
         {
@@ -3732,7 +3732,7 @@ namespace Mantis
                 this.RaisePropertyChanged("view_state");
             }
         }
-        
+
         /// <remarks/>
         public System.DateTime last_updated
         {
@@ -3761,7 +3761,7 @@ namespace Mantis
                 this.RaisePropertyChanged("project");
             }
         }
-        
+
         /// <remarks/>
         public string category
         {
@@ -3835,7 +3835,7 @@ namespace Mantis
                 this.RaisePropertyChanged("reporter");
             }
         }
-        
+
         /// <remarks/>
         public string summary
         {
@@ -3932,7 +3932,7 @@ namespace Mantis
         private ObjectRef fieldField;
         
         private string valueField;
-        
+
         /// <remarks/>
         public ObjectRef field
         {
@@ -3946,7 +3946,7 @@ namespace Mantis
                 this.RaisePropertyChanged("field");
             }
         }
-        
+
         /// <remarks/>
         public string value
         {
@@ -4016,7 +4016,7 @@ namespace Mantis
                 this.RaisePropertyChanged("id");
             }
         }
-        
+
         /// <remarks/>
         public AccountData reporter
         {
@@ -4030,7 +4030,7 @@ namespace Mantis
                 this.RaisePropertyChanged("reporter");
             }
         }
-        
+
         /// <remarks/>
         public string text
         {
@@ -4044,7 +4044,7 @@ namespace Mantis
                 this.RaisePropertyChanged("text");
             }
         }
-        
+
         /// <remarks/>
         public ObjectRef view_state
         {
@@ -4058,7 +4058,7 @@ namespace Mantis
                 this.RaisePropertyChanged("view_state");
             }
         }
-        
+
         /// <remarks/>
         public System.DateTime date_submitted
         {
@@ -4072,7 +4072,7 @@ namespace Mantis
                 this.RaisePropertyChanged("date_submitted");
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.SoapIgnoreAttribute()]
         public bool date_submittedSpecified
@@ -4087,7 +4087,7 @@ namespace Mantis
                 this.RaisePropertyChanged("date_submittedSpecified");
             }
         }
-        
+
         /// <remarks/>
         public System.DateTime last_modified
         {
@@ -4101,7 +4101,7 @@ namespace Mantis
                 this.RaisePropertyChanged("last_modified");
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.SoapIgnoreAttribute()]
         public bool last_modifiedSpecified
@@ -4146,7 +4146,7 @@ namespace Mantis
                 this.RaisePropertyChanged("note_type");
             }
         }
-        
+
         /// <remarks/>
         public string note_attr
         {
@@ -4200,7 +4200,7 @@ namespace Mantis
                 this.RaisePropertyChanged("id");
             }
         }
-        
+
         /// <remarks/>
         public ObjectRef type
         {
@@ -4279,7 +4279,7 @@ namespace Mantis
                 this.RaisePropertyChanged("id");
             }
         }
-        
+
         /// <remarks/>
         public string filename
         {
@@ -4308,7 +4308,7 @@ namespace Mantis
                 this.RaisePropertyChanged("size");
             }
         }
-        
+
         /// <remarks/>
         public string content_type
         {
@@ -4322,7 +4322,7 @@ namespace Mantis
                 this.RaisePropertyChanged("content_type");
             }
         }
-        
+
         /// <remarks/>
         public System.DateTime date_submitted
         {
@@ -4336,7 +4336,7 @@ namespace Mantis
                 this.RaisePropertyChanged("date_submitted");
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.SoapIgnoreAttribute()]
         public bool date_submittedSpecified
@@ -4493,7 +4493,7 @@ namespace Mantis
                 this.RaisePropertyChanged("id");
             }
         }
-        
+
         /// <remarks/>
         public ObjectRef view_state
         {
@@ -4507,7 +4507,7 @@ namespace Mantis
                 this.RaisePropertyChanged("view_state");
             }
         }
-        
+
         /// <remarks/>
         public System.DateTime last_updated
         {
@@ -4521,7 +4521,7 @@ namespace Mantis
                 this.RaisePropertyChanged("last_updated");
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.SoapIgnoreAttribute()]
         public bool last_updatedSpecified
@@ -4536,7 +4536,7 @@ namespace Mantis
                 this.RaisePropertyChanged("last_updatedSpecified");
             }
         }
-        
+
         /// <remarks/>
         public ObjectRef project
         {
@@ -4550,7 +4550,7 @@ namespace Mantis
                 this.RaisePropertyChanged("project");
             }
         }
-        
+
         /// <remarks/>
         public string category
         {
@@ -4564,7 +4564,7 @@ namespace Mantis
                 this.RaisePropertyChanged("category");
             }
         }
-        
+
         /// <remarks/>
         public ObjectRef priority
         {
@@ -4578,7 +4578,7 @@ namespace Mantis
                 this.RaisePropertyChanged("priority");
             }
         }
-        
+
         /// <remarks/>
         public ObjectRef severity
         {
@@ -4592,7 +4592,7 @@ namespace Mantis
                 this.RaisePropertyChanged("severity");
             }
         }
-        
+
         /// <remarks/>
         public ObjectRef status
         {
@@ -4606,7 +4606,7 @@ namespace Mantis
                 this.RaisePropertyChanged("status");
             }
         }
-        
+
         /// <remarks/>
         public AccountData reporter
         {
@@ -4620,7 +4620,7 @@ namespace Mantis
                 this.RaisePropertyChanged("reporter");
             }
         }
-        
+
         /// <remarks/>
         public string summary
         {
@@ -4634,7 +4634,7 @@ namespace Mantis
                 this.RaisePropertyChanged("summary");
             }
         }
-        
+
         /// <remarks/>
         public string version
         {
@@ -4648,7 +4648,7 @@ namespace Mantis
                 this.RaisePropertyChanged("version");
             }
         }
-        
+
         /// <remarks/>
         public string build
         {
@@ -4662,7 +4662,7 @@ namespace Mantis
                 this.RaisePropertyChanged("build");
             }
         }
-        
+
         /// <remarks/>
         public string platform
         {
@@ -4676,7 +4676,7 @@ namespace Mantis
                 this.RaisePropertyChanged("platform");
             }
         }
-        
+
         /// <remarks/>
         public string os
         {
@@ -4690,7 +4690,7 @@ namespace Mantis
                 this.RaisePropertyChanged("os");
             }
         }
-        
+
         /// <remarks/>
         public string os_build
         {
@@ -4704,7 +4704,7 @@ namespace Mantis
                 this.RaisePropertyChanged("os_build");
             }
         }
-        
+
         /// <remarks/>
         public ObjectRef reproducibility
         {
@@ -4718,7 +4718,7 @@ namespace Mantis
                 this.RaisePropertyChanged("reproducibility");
             }
         }
-        
+
         /// <remarks/>
         public System.DateTime date_submitted
         {
@@ -4732,7 +4732,7 @@ namespace Mantis
                 this.RaisePropertyChanged("date_submitted");
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.SoapIgnoreAttribute()]
         public bool date_submittedSpecified
@@ -4762,7 +4762,7 @@ namespace Mantis
                 this.RaisePropertyChanged("sponsorship_total");
             }
         }
-        
+
         /// <remarks/>
         public AccountData handler
         {
@@ -4776,7 +4776,7 @@ namespace Mantis
                 this.RaisePropertyChanged("handler");
             }
         }
-        
+
         /// <remarks/>
         public ObjectRef projection
         {
@@ -4790,7 +4790,7 @@ namespace Mantis
                 this.RaisePropertyChanged("projection");
             }
         }
-        
+
         /// <remarks/>
         public ObjectRef eta
         {
@@ -4804,7 +4804,7 @@ namespace Mantis
                 this.RaisePropertyChanged("eta");
             }
         }
-        
+
         /// <remarks/>
         public ObjectRef resolution
         {
@@ -4818,7 +4818,7 @@ namespace Mantis
                 this.RaisePropertyChanged("resolution");
             }
         }
-        
+
         /// <remarks/>
         public string fixed_in_version
         {
@@ -4832,7 +4832,7 @@ namespace Mantis
                 this.RaisePropertyChanged("fixed_in_version");
             }
         }
-        
+
         /// <remarks/>
         public string target_version
         {
@@ -4846,7 +4846,7 @@ namespace Mantis
                 this.RaisePropertyChanged("target_version");
             }
         }
-        
+
         /// <remarks/>
         public string description
         {
@@ -4860,7 +4860,7 @@ namespace Mantis
                 this.RaisePropertyChanged("description");
             }
         }
-        
+
         /// <remarks/>
         public string steps_to_reproduce
         {
@@ -4874,7 +4874,7 @@ namespace Mantis
                 this.RaisePropertyChanged("steps_to_reproduce");
             }
         }
-        
+
         /// <remarks/>
         public string additional_information
         {
@@ -4888,7 +4888,7 @@ namespace Mantis
                 this.RaisePropertyChanged("additional_information");
             }
         }
-        
+
         /// <remarks/>
         public AttachmentData[] attachments
         {
@@ -4902,7 +4902,7 @@ namespace Mantis
                 this.RaisePropertyChanged("attachments");
             }
         }
-        
+
         /// <remarks/>
         public RelationshipData[] relationships
         {
@@ -4916,7 +4916,7 @@ namespace Mantis
                 this.RaisePropertyChanged("relationships");
             }
         }
-        
+
         /// <remarks/>
         public IssueNoteData[] notes
         {
@@ -4930,7 +4930,7 @@ namespace Mantis
                 this.RaisePropertyChanged("notes");
             }
         }
-        
+
         /// <remarks/>
         public CustomFieldValueForIssueData[] custom_fields
         {
@@ -4944,7 +4944,7 @@ namespace Mantis
                 this.RaisePropertyChanged("custom_fields");
             }
         }
-        
+
         /// <remarks/>
         public System.DateTime due_date
         {
@@ -4958,7 +4958,7 @@ namespace Mantis
                 this.RaisePropertyChanged("due_date");
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.SoapIgnoreAttribute()]
         public bool due_dateSpecified
@@ -4973,7 +4973,7 @@ namespace Mantis
                 this.RaisePropertyChanged("due_dateSpecified");
             }
         }
-        
+
         /// <remarks/>
         public AccountData[] monitors
         {
@@ -4987,7 +4987,7 @@ namespace Mantis
                 this.RaisePropertyChanged("monitors");
             }
         }
-        
+
         /// <remarks/>
         public bool sticky
         {
@@ -5001,7 +5001,7 @@ namespace Mantis
                 this.RaisePropertyChanged("sticky");
             }
         }
-        
+
         /// <remarks/>
         [System.Xml.Serialization.SoapIgnoreAttribute()]
         public bool stickySpecified
@@ -5016,7 +5016,7 @@ namespace Mantis
                 this.RaisePropertyChanged("stickySpecified");
             }
         }
-        
+
         /// <remarks/>
         public ObjectRef[] tags
         {
@@ -5047,7 +5047,7 @@ namespace Mantis
     public interface MantisConnectPortTypeChannel : Mantis.MantisConnectPortType, System.ServiceModel.IClientChannel
     {
     }
-    
+
     [System.Diagnostics.DebuggerStepThroughAttribute()]
     [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.0.3")]
     public partial class MantisConnectPortTypeClient : System.ServiceModel.ClientBase<Mantis.MantisConnectPortType>, Mantis.MantisConnectPortType
@@ -5063,32 +5063,24 @@ namespace Mantis
         public MantisConnectPortTypeClient() : 
                 base(MantisConnectPortTypeClient.GetDefaultBinding(), MantisConnectPortTypeClient.GetDefaultEndpointAddress())
         {
-            this.Endpoint.Name = EndpointConfiguration.MantisConnectPort.ToString();
-            ConfigureEndpoint(this.Endpoint, this.ClientCredentials);
         }
         
         public MantisConnectPortTypeClient(EndpointConfiguration endpointConfiguration) : 
                 base(MantisConnectPortTypeClient.GetBindingForEndpoint(endpointConfiguration), MantisConnectPortTypeClient.GetEndpointAddress(endpointConfiguration))
         {
-            this.Endpoint.Name = endpointConfiguration.ToString();
-            ConfigureEndpoint(this.Endpoint, this.ClientCredentials);
         }
         
         public MantisConnectPortTypeClient(EndpointConfiguration endpointConfiguration, string remoteAddress) : 
                 base(MantisConnectPortTypeClient.GetBindingForEndpoint(endpointConfiguration), new System.ServiceModel.EndpointAddress(remoteAddress))
         {
-            this.Endpoint.Name = endpointConfiguration.ToString();
-            ConfigureEndpoint(this.Endpoint, this.ClientCredentials);
         }
         
         public MantisConnectPortTypeClient(EndpointConfiguration endpointConfiguration, System.ServiceModel.EndpointAddress remoteAddress) : 
                 base(MantisConnectPortTypeClient.GetBindingForEndpoint(endpointConfiguration), remoteAddress)
         {
-            this.Endpoint.Name = endpointConfiguration.ToString();
-            ConfigureEndpoint(this.Endpoint, this.ClientCredentials);
         }
-        
-        public MantisConnectPortTypeClient(System.ServiceModel.Channels.Binding binding, System.ServiceModel.EndpointAddress remoteAddress) : 
+
+        public MantisConnectPortTypeClient(System.ServiceModel.Channels.Binding binding, System.ServiceModel.EndpointAddress remoteAddress) :
                 base(binding, remoteAddress)
         {
         }
@@ -5097,7 +5089,7 @@ namespace Mantis
         {
             return base.Channel.mc_version();
         }
-        
+
         public System.Threading.Tasks.Task<string> mc_versionAsync()
         {
             return base.Channel.mc_versionAsync();
@@ -5177,7 +5169,7 @@ namespace Mantis
         {
             return base.Channel.mc_enum_getAsync(username, password, enumeration);
         }
-        
+
         public bool mc_issue_exists(string username, string password, string issue_id)
         {
             return base.Channel.mc_issue_exists(username, password, issue_id);
@@ -5217,7 +5209,7 @@ namespace Mantis
         {
             return base.Channel.mc_issue_get_biggest_idAsync(username, password, project_id);
         }
-        
+
         public string mc_issue_get_id_from_summary(string username, string password, string summary)
         {
             return base.Channel.mc_issue_get_id_from_summary(username, password, summary);
@@ -5287,7 +5279,7 @@ namespace Mantis
         {
             return base.Channel.mc_issue_relationship_deleteAsync(username, password, issue_id, relationship_id);
         }
-        
+
         public string mc_issue_attachment_add(string username, string password, string issue_id, string name, string file_type, byte[] content)
         {
             return base.Channel.mc_issue_attachment_add(username, password, issue_id, name, file_type, content);
@@ -5297,7 +5289,7 @@ namespace Mantis
         {
             return base.Channel.mc_issue_attachment_addAsync(username, password, issue_id, name, file_type, content);
         }
-        
+
         public bool mc_issue_attachment_delete(string username, string password, string issue_attachment_id)
         {
             return base.Channel.mc_issue_attachment_delete(username, password, issue_attachment_id);
@@ -5307,7 +5299,7 @@ namespace Mantis
         {
             return base.Channel.mc_issue_attachment_deleteAsync(username, password, issue_attachment_id);
         }
-        
+
         public byte[] mc_issue_attachment_get(string username, string password, string issue_attachment_id)
         {
             return base.Channel.mc_issue_attachment_get(username, password, issue_attachment_id);
@@ -5382,7 +5374,7 @@ namespace Mantis
         {
             return base.Channel.mc_project_get_categoriesAsync(username, password, project_id);
         }
-        
+
         public string mc_project_add_category(string username, string password, string project_id, string p_category_name)
         {
             return base.Channel.mc_project_add_category(username, password, project_id, p_category_name);
@@ -5392,7 +5384,7 @@ namespace Mantis
         {
             return base.Channel.mc_project_add_categoryAsync(username, password, project_id, p_category_name);
         }
-        
+
         public string mc_project_delete_category(string username, string password, string project_id, string p_category_name)
         {
             return base.Channel.mc_project_delete_category(username, password, project_id, p_category_name);
@@ -5402,7 +5394,7 @@ namespace Mantis
         {
             return base.Channel.mc_project_delete_categoryAsync(username, password, project_id, p_category_name);
         }
-        
+
         public string mc_project_rename_category_by_name(string username, string password, string project_id, string p_category_name, string p_category_name_new, string p_assigned_to)
         {
             return base.Channel.mc_project_rename_category_by_name(username, password, project_id, p_category_name, p_category_name_new, p_assigned_to);
@@ -5467,7 +5459,7 @@ namespace Mantis
         {
             return base.Channel.mc_project_attachment_getAsync(username, password, project_attachment_id);
         }
-        
+
         public string mc_project_attachment_add(string username, string password, string project_id, string name, string title, string description, string file_type, byte[] content)
         {
             return base.Channel.mc_project_attachment_add(username, password, project_id, name, title, description, file_type, content);
@@ -5477,7 +5469,7 @@ namespace Mantis
         {
             return base.Channel.mc_project_attachment_addAsync(username, password, project_id, name, title, description, file_type, content);
         }
-        
+
         public bool mc_project_attachment_delete(string username, string password, string project_attachment_id)
         {
             return base.Channel.mc_project_attachment_delete(username, password, project_attachment_id);
@@ -5487,7 +5479,7 @@ namespace Mantis
         {
             return base.Channel.mc_project_attachment_deleteAsync(username, password, project_attachment_id);
         }
-        
+
         public string[] mc_project_get_all_subprojects(string username, string password, string project_id)
         {
             return base.Channel.mc_project_get_all_subprojects(username, password, project_id);
