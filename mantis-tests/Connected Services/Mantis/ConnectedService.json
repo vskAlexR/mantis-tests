@@ -1,0 +1,39 @@
+{
+  "ExtendedData": {
+    "inputs": [
+      "../../../../../../../../xampp/matis.wsdl"
+    ],
+    "collectionTypes": [
+      "System.Array",
+      "System.Collections.Generic.Dictionary`2"
+    ],
+    "namespaceMappings": [
+      "*, Mantis"
+    ],
+    "references": [
+      "Microsoft.TestPlatform.CommunicationUtilities, {Microsoft.TestPlatform.TestHost, 16.11.0}",
+      "Microsoft.TestPlatform.CoreUtilities, {Microsoft.TestPlatform.ObjectModel, 16.11.0}",
+      "Microsoft.TestPlatform.CrossPlatEngine, {Microsoft.TestPlatform.TestHost, 16.11.0}",
+      "Microsoft.TestPlatform.PlatformAbstractions, {Microsoft.TestPlatform.ObjectModel, 16.11.0}",
+      "Microsoft.TestPlatform.Utilities, {Microsoft.TestPlatform.TestHost, 16.11.0}",
+      "Microsoft.VisualStudio.CodeCoverage.Shim, {Microsoft.CodeCoverage, 16.11.0}",
+      "Microsoft.VisualStudio.TestPlatform.Common, {Microsoft.TestPlatform.TestHost, 16.11.0}",
+      "Microsoft.VisualStudio.TestPlatform.ObjectModel, {Microsoft.TestPlatform.ObjectModel, 16.11.0}",
+      "Newtonsoft.Json, {Newtonsoft.Json, 12.0.3}",
+      "NuGet.Frameworks, {NuGet.Frameworks, 5.0.0}",
+      "nunit.core, {NUnitTestAdapter.WithFramework, 2.0.0}",
+      "nunit.core.interfaces, {NUnitTestAdapter.WithFramework, 2.0.0}",
+      "nunit.framework, {NUnit, 3.13.2}",
+      "nunit.util, {NUnitTestAdapter.WithFramework, 2.0.0}",
+      "NUnit.VisualStudio.TestAdapter, {NUnitTestAdapter.WithFramework, 2.0.0}",
+      "OpaqueMail, {OpaqueMail, 2.4.3}",
+      "System.Net.FtpClient, {System.Net.FtpClient, 1.0.5824.34026}",
+      "System.Reflection.Metadata, {System.Reflection.Metadata, 1.6.0}",
+      "testhost, {Microsoft.TestPlatform.TestHost, 16.11.0}",
+      "WebDriver, {Selenium.WebDriver, 4.2.0}",
+      "WebDriver.Support, {Selenium.Support, 4.2.0}"
+    ],
+    "targetFramework": "net6.0",
+    "typeReuseMode": "All"
+  }
+}
