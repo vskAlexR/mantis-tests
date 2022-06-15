@@ -15,8 +15,8 @@ namespace mantis_tests
         {
             MantisData project = new MantisData()
             {
-                Name = "12311",
-                Description = "3344"
+                Name = GenerateRandomString(10),
+                Description = "1234"
             };
 
             List<MantisData> projects = app.Projects.GetProjectsList();
