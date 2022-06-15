@@ -38,7 +38,7 @@ namespace mantis_tests
             };
             MantisData project = new MantisData()
             {
-                Name = "12311"
+                Name = GenerateRandomString(10)
             };
 
             List<MantisData> oldProjects = app.Api.GetProjects(account); ;
@@ -48,7 +48,7 @@ namespace mantis_tests
 
             app.Projects.RemoveProject(toBeRemoved);
 
-            Assert.AreEqual(oldProjects.Count - 1, app.Projects.GetProjectsCount());
+            Assert.AreEqual(oldProjects.Count - 1, app.Api.GetProjects(account).Count());
 
             List<MantisData> newProjects = app.Api.GetProjects(account);
 
